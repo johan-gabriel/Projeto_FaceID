@@ -83,7 +83,7 @@ rule ASM_EXECUTABLE_LINKER__bs2_default_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Placa_controle_FaceID_SSLon" -B"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Placa_controle_FaceID_SSLon\build"
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Projeto_FaceID\Placa_controle_FaceID_SSLon" -B"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Projeto_FaceID\Placa_controle_FaceID_SSLon\build"
   description = Re-running CMake...
   generator = 1
 

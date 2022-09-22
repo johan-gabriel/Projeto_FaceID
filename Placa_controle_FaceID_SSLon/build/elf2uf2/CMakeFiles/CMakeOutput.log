@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/3.20.5/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/3.20.5/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe 
@@ -45,23 +45,23 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/3.20.5/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/3.20.5/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_4bd2f && [1/2  50% :: 0.127] Building C object CMakeFiles\cmTC_4bd2f.dir\CMakeCCompilerABI.c.obj
+Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_012ba && [1/2  50% :: 0.119] Building C object CMakeFiles\cmTC_012ba.dir\CMakeCCompilerABI.c.obj
 Observação: incluindo arquivo: C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
-[2/2 100% :: 0.979] Linking C executable cmTC_4bd2f.exe
+[2/2 100% :: 2.086] Linking C executable cmTC_012ba.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID_SSLon/build/elf2uf2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_82c37 && [1/2  50% :: 0.208] Building CXX object CMakeFiles\cmTC_82c37.dir\CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_64108 && [1/2  50% :: 0.317] Building CXX object CMakeFiles\cmTC_64108.dir\CMakeCXXCompilerABI.cpp.obj
 Observação: incluindo arquivo: C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
-[2/2 100% :: 7.680] Linking CXX executable cmTC_82c37.exe
+[2/2 100% :: 8.694] Linking CXX executable cmTC_64108.exe
 
 
 

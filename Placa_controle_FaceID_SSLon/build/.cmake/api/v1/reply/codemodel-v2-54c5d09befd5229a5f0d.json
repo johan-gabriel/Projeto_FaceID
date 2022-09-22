@@ -976,7 +976,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FaceIDSSL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FaceIDSSL-Debug-022fae9927d2518c3c82.json",
+					"jsonFile" : "target-FaceIDSSL-Debug-a05040a249dd1032a6d5.json",
 					"name" : "FaceIDSSL",
 					"projectIndex" : 0
 				},
@@ -990,7 +990,7 @@
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-6d42e0eec134d3e42b6e.json",
+					"jsonFile" : "target-bs2_default-Debug-c2deb8f79f292cbb34a6.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
@@ -1028,8 +1028,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID_SSLon/build",
-		"source" : "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID_SSLon"
+		"build" : "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID_SSLon/build",
+		"source" : "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID_SSLon"
 	},
 	"version" : 
 	{
