@@ -38,7 +38,7 @@ int libBlok = 0;
 int blokLib = 0;
 int giroGirado = 0;
 int sslOn = 0;
-
+// Sinal misto serve para NÃO acender o Led vemelho ao mesmo tempo que o verde.
 bool sinalMisto = false;
 bool stateLibera = false;
 bool lastStateButton = false;

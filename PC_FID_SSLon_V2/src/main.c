@@ -40,7 +40,7 @@ int giroGirado = 0;
 int sslOn = 0;
 int autoriza = 0;
 int tempo = 0;
-int auxTemp = 100000;
+int auxTemp = 3000;
 int inTemp = 0;
 
 
