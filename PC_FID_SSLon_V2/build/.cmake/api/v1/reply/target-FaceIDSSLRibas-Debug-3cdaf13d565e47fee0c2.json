@@ -13,10 +13,10 @@
 			"add_executable",
 			"target_link_libraries",
 			"add_dependencies",
-			"pico_define_boot_stage2",
 			"find_package",
 			"pico_add_uf2_output",
 			"pico_add_extra_outputs",
+			"pico_define_boot_stage2",
 			"target_compile_definitions",
 			"pico_set_program_name",
 			"pico_set_program_version",
@@ -25,10 +25,10 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"C:/Users/TECNICA/Raspberry Pico/Pico/pico-sdk/src/rp2_common/boot_stage2/CMakeLists.txt",
 			"C:/Users/TECNICA/Raspberry Pico/Pico/pico-sdk/tools/FindELF2UF2.cmake",
 			"C:/Users/TECNICA/Raspberry Pico/Pico/pico-sdk/tools/CMakeLists.txt",
 			"C:/Users/TECNICA/Raspberry Pico/Pico/pico-sdk/src/rp2_common.cmake",
+			"C:/Users/TECNICA/Raspberry Pico/Pico/pico-sdk/src/rp2_common/boot_stage2/CMakeLists.txt",
 			"C:/Users/TECNICA/Raspberry Pico/Pico/pico-sdk/src/common/pico_binary_info/CMakeLists.txt"
 		],
 		"nodes" : 
@@ -49,46 +49,46 @@
 				"parent" : 0
 			},
 			{
-				"file" : 1
-			},
-			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 100,
-				"parent" : 3
-			},
-			{
-				"command" : 2,
-				"file" : 1,
-				"line" : 74,
-				"parent" : 4
-			},
-			{
-				"command" : 6,
+				"command" : 5,
 				"file" : 0,
 				"line" : 53,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
-				"file" : 4,
+				"command" : 4,
+				"file" : 3,
 				"line" : 45,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 49,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 41,
 				"parent" : 6
 			},
 			{
-				"command" : 4,
-				"file" : 3,
-				"line" : 49,
-				"parent" : 7
+				"file" : 4
 			},
 			{
-				"file" : 2,
+				"command" : 6,
+				"file" : 4,
+				"line" : 100,
 				"parent" : 8
 			},
 			{
 				"command" : 2,
-				"file" : 2,
-				"line" : 41,
+				"file" : 4,
+				"line" : 74,
 				"parent" : 9
 			},
 			{
@@ -117,9 +117,9 @@
 			},
 			{
 				"command" : 7,
-				"file" : 4,
+				"file" : 3,
 				"line" : 28,
-				"parent" : 6
+				"parent" : 3
 			},
 			{
 				"command" : 10,
@@ -1425,12 +1425,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 5,
-			"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d"
+			"backtrace" : 7,
+			"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 10,
-			"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df"
+			"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d"
 		}
 	],
 	"id" : "FaceIDSSLRibas::@6890427a1f51a3e7e1df",

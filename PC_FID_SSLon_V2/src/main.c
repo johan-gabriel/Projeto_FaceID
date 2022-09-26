@@ -40,6 +40,9 @@ int giroGirado = 0;
 int sslOn = 0;
 int autoriza = 0;
 int tempo = 0;
+int auxTemp = 100000;
+int inTemp = 0;
+
 
 bool sinalMisto = false;
 bool stateLibera = false;
@@ -106,13 +109,22 @@ void loop(void){
     if (stateButton == true)
     {
         autoriza = 1;
+        inTemp++;
     }
+    if (inTemp >= 1500)
+    {
+        auxTemp = inTemp;
+    }
+    
     //Tempo de liberação em ms
-    if(tempo > 5000){
+    if(tempo > auxTemp){
         autoriza = 0;
         tempo = 0;
+        inTemp = 0;
+        
     }
-
+    printf(" %d \n",auxTemp);
+    printf(" %d \n",inTemp);
     if (autoriza == 1)
     { 
         tempo++;
