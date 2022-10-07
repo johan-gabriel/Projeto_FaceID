@@ -26,9 +26,9 @@ The CXX compiler identification is MSVC, found in "C:/Users/TECNICA/Raspberry Pi
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build/pioasm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_e682e && [1/2  50% :: 0.520] Building CXX object CMakeFiles\cmTC_e682e.dir\CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_959c0 && [1/2  50% :: 0.697] Building CXX object CMakeFiles\cmTC_959c0.dir\CMakeCXXCompilerABI.cpp.obj
 Observação: incluindo arquivo: C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
-[2/2 100% :: 1.510] Linking CXX executable cmTC_e682e.exe
+[2/2 100% :: 2.464] Linking CXX executable cmTC_959c0.exe
 
 
 

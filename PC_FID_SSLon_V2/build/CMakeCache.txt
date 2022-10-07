@@ -102,7 +102,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
+CMAKE_DLLTOOL:FILEPATH=C:/MinGW/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -123,7 +123,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FaceIDSSLRibas
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FaceIDSSL
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-ld.exe
@@ -165,7 +165,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=FaceIDSSLRibas
+CMAKE_PROJECT_NAME:STATIC=FaceIDSSL
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-ranlib.exe
@@ -239,10 +239,10 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=C:/Program Files/Graphviz/bin/dot.exe
 DOXYGEN_EXECUTABLE:FILEPATH=C:/Program Files/doxygen/bin/doxygen.exe
 
 //Value Computed by CMake
-FaceIDSSLRibas_BINARY_DIR:STATIC=C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build
+FaceIDSSL_BINARY_DIR:STATIC=C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build
 
 //Value Computed by CMake
-FaceIDSSLRibas_SOURCE_DIR:STATIC=C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2
+FaceIDSSL_SOURCE_DIR:STATIC=C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2
 
 //PICO target board (e.g. pico)
 PICO_BOARD:STRING=pico

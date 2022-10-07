@@ -867,7 +867,7 @@
 					[
 						0
 					],
-					"name" : "FaceIDSSLRibas",
+					"name" : "FaceIDSSL",
 					"targetIndexes" : 
 					[
 						0,
@@ -975,9 +975,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "FaceIDSSLRibas::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FaceIDSSLRibas-Debug-3cdaf13d565e47fee0c2.json",
-					"name" : "FaceIDSSLRibas",
+					"id" : "FaceIDSSL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FaceIDSSL-Debug-c3f0f36b2b69c6084160.json",
+					"name" : "FaceIDSSL",
 					"projectIndex" : 0
 				},
 				{

@@ -16,7 +16,7 @@ include(pico_sdk_import.cmake)
 # Define o nome do projeto.
 # Lembre-se de trocar para o nome do seu projeto,
 # após a troca, se houver uma pasta build, remova e rode o comando Configure novamente.
-project(FaceIDSSLRibas C CXX ASM)
+project(FaceIDSSL C CXX ASM)
 
 # Inicializa o SDK do Raspberry Pi Pico.
 pico_sdk_init()

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "FaceIDSSLRibas.elf"
+			"path" : "FaceIDSSL.elf"
 		}
 	],
 	"backtrace" : 1,
@@ -321,7 +321,7 @@
 				},
 				{
 					"backtrace" : 12,
-					"define" : "PICO_PROGRAM_NAME=\"FaceIDSSLRibas\""
+					"define" : "PICO_PROGRAM_NAME=\"FaceIDSSL\""
 				},
 				{
 					"backtrace" : 14,
@@ -329,7 +329,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"FaceIDSSLRibas\""
+					"define" : "PICO_TARGET_NAME=\"FaceIDSSL\""
 				},
 				{
 					"backtrace" : 2,
@@ -781,7 +781,7 @@
 				},
 				{
 					"backtrace" : 12,
-					"define" : "PICO_PROGRAM_NAME=\"FaceIDSSLRibas\""
+					"define" : "PICO_PROGRAM_NAME=\"FaceIDSSL\""
 				},
 				{
 					"backtrace" : 14,
@@ -789,7 +789,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"FaceIDSSLRibas\""
+					"define" : "PICO_TARGET_NAME=\"FaceIDSSL\""
 				},
 				{
 					"backtrace" : 2,
@@ -1205,7 +1205,7 @@
 				},
 				{
 					"backtrace" : 12,
-					"define" : "PICO_PROGRAM_NAME=\"FaceIDSSLRibas\""
+					"define" : "PICO_PROGRAM_NAME=\"FaceIDSSL\""
 				},
 				{
 					"backtrace" : 14,
@@ -1213,7 +1213,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"FaceIDSSLRibas\""
+					"define" : "PICO_TARGET_NAME=\"FaceIDSSL\""
 				},
 				{
 					"backtrace" : 2,
@@ -1433,7 +1433,7 @@
 			"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d"
 		}
 	],
-	"id" : "FaceIDSSLRibas::@6890427a1f51a3e7e1df",
+	"id" : "FaceIDSSL::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -2218,7 +2218,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-Map=FaceIDSSLRibas.elf.map",
+				"fragment" : "-Wl,-Map=FaceIDSSL.elf.map",
 				"role" : "flags"
 			},
 			{
@@ -2268,8 +2268,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "FaceIDSSLRibas",
-	"nameOnDisk" : "FaceIDSSLRibas.elf",
+	"name" : "FaceIDSSL",
+	"nameOnDisk" : "FaceIDSSL.elf",
 	"paths" : 
 	{
 		"build" : ".",
