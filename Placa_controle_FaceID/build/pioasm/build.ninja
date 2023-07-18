@@ -149,7 +149,7 @@ build pioasm.exe: CXX_EXECUTABLE_LINKER__pioasm_Debug CMakeFiles\pioasm.dir\main
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Placa_controle_FaceID\build\pioasm" && "C:\Program Files\CMake\bin\cmake-gui.exe" -S"C:\Users\TECNICA\Raspberry Pico\Pico\pico-sdk\tools\pioasm" -B"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Placa_controle_FaceID\build\pioasm""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Projeto_FaceID\Placa_controle_FaceID\build\pioasm" && "C:\Program Files\CMake\bin\cmake-gui.exe" -S"C:\Users\TECNICA\Raspberry Pico\Pico\pico-sdk\tools\pioasm" -B"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Projeto_FaceID\Placa_controle_FaceID\build\pioasm""
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -161,7 +161,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Placa_controle_FaceID\build\pioasm" && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\TECNICA\Raspberry Pico\Pico\pico-sdk\tools\pioasm" -B"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Placa_controle_FaceID\build\pioasm""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Projeto_FaceID\Placa_controle_FaceID\build\pioasm" && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\TECNICA\Raspberry Pico\Pico\pico-sdk\tools\pioasm" -B"C:\Users\TECNICA\Raspberry Pico\Pico\_projetos\Projeto_FaceID\Placa_controle_FaceID\build\pioasm""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -179,7 +179,7 @@ build pioasm: phony pioasm.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID/build/pioasm
+# Folder: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID/build/pioasm
 
 build all: phony pioasm.exe
 

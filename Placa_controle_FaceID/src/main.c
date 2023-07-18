@@ -25,7 +25,7 @@
 #define SOL1 15
 #define SOL2 14
 #define SENSOR2 20
-#define FACE_ID 16
+#define FACE_ID 17
 #define SENSOR1 21
 
 void loop(void);
@@ -37,7 +37,12 @@ int contador = 0;
 int libBlok = 0;
 int blokLib = 0;
 int giroGirado = 0;
+int autoriza = 0;
+int tempo = 0;
+int auxTemp = 3000;
+int inTemp = 0;
 
+bool sinalMisto = false;
 bool stateLibera = false;
 bool lastStateButton = false;
 
@@ -96,13 +101,36 @@ void loop(void){
     bool stateButton = !gpio_get(FACE_ID);
     int liberar = liberado(contador);
     int fimG = liberado(1);
+    
     // ----------------------- Inicia a verificação ------------------------------
     // Estagio liberado
     if (stateButton == true)
     {
+        autoriza = 1;
+        inTemp++;
+    }
+    if (inTemp >= 1500)
+    {
+        auxTemp = inTemp;
+    }
+    
+    //Tempo de liberação em ms
+    if(tempo > auxTemp){
+        autoriza = 0;
+        tempo = 0;
+        inTemp = 0;
+        
+    }
+    printf(" %d \n",auxTemp);
+    printf(" %d \n",inTemp);
+    if (autoriza == 1)
+    { gpio_put(S_LIBERADO, 1);
+        tempo++;
+        printf("Tempo %d\n", tempo);
         contador = 1;
         liberar = liberado(contador);
         liberado(contador);
+        
         // Bloqueia giro > 1
         if (liberar == 3 && libBlok == 0) {
             libBlok = 1;
@@ -119,22 +147,24 @@ void loop(void){
             if (liberar == 0)
             {
                 libBlok = 3;
-                giroGirado = 1;
-            }
-            
+                giroGirado = 1;  
+            } 
         }
         if (libBlok == 3){
+            //autoriza = 0;
             bloqueado(0);
             giroGirado=0;
             gpio_put(S_ESQ, 0);
             gpio_put(S_DIR, 0);
-            
+            autoriza = 0;
+            tempo =0;
+            gpio_put(S_LIBERADO, 0);
         }
-        gpio_put(S_LIBERADO, 1);
+        
         
     }
     // bloqueado no stand by
-    if (stateButton == false && giroGirado == 0){
+    if (autoriza == 0 && giroGirado == 0){
         gpio_put(S_LIBERADO, 0);
         gpio_put(S_ESQ, 0);
         gpio_put(S_DIR, 0);
@@ -145,42 +175,52 @@ void loop(void){
             blokLib = 0;
         }   
     }
-    // meio do giro no liberado, mas travou
-    if (stateButton == false && giroGirado == 1 && fimG >= 1){
-        gpio_put(S_LIBERADO, 0);
-        gpio_put(S_ESQ, 1);
-        gpio_put(S_DIR, 1);
-        if (giroGirado == 1 && (fimG == 1|| fimG == 2)){
-            blokLib = 1;      
+   
+     if (autoriza == 1 && sinalMisto == false){
+            gpio_put(S_LIBERADO, 1);
+            // meio do giro no liberado, mas travou
+        if (autoriza == 0 && giroGirado == 1 && fimG >= 1){
+            gpio_put(S_LIBERADO, 0);
+            // Acende o Pictograma verde enquanto não houver terminado o giro ou parar a liberação
+            gpio_put(S_ESQ, 1);
+            gpio_put(S_DIR, 1);
+            if (giroGirado == 1 && (fimG == 1|| fimG == 2)){
+                blokLib = 1;
+                      
+            }
         }
-    }
-    if (blokLib == 1 && fimG ==0)
-    {
-        bloqueado(0);
-        giroGirado =0;
-        gpio_put(S_ESQ, 0);
-        gpio_put(S_DIR, 0);
-        
-            
-    }
-    if (contador == 0 && giroGirado == 1){
-        gpio_put(S_ESQ, 1);
-        gpio_put(S_DIR, 1);
-    }
-    if (contador == 1 && libBlok == 0)
-    {
-         gpio_put(S_ESQ, 1);
-         gpio_put(S_DIR, 1);
-         if (libBlok == 3 && contador == 1)
-         {
+        if (blokLib == 1 && fimG ==0)
+        {   gpio_put(S_LIBERADO,0);
+            bloqueado(0);
+            giroGirado =0;
             gpio_put(S_ESQ, 0);
             gpio_put(S_DIR, 0);
-         }
-         
+            autoriza = 0;
+            
+                
+        }
+        if (contador == 0 && giroGirado == 1){
+            gpio_put(S_LIBERADO,0);
+            // Acende o Pictograma verde enquanto não houver terminado o giro ou parar a liberação
+            gpio_put(S_ESQ, 1);
+            gpio_put(S_DIR, 1);
+        }
+        if (contador == 1 && libBlok == 0)
+        {
+            gpio_put(S_LIBERADO,0);
+            // Acende o Pictograma verde enquanto não houver terminado o giro ou parar a liberação
+            gpio_put(S_ESQ, 1);
+            gpio_put(S_DIR, 1);
+            if (libBlok == 3 && contador == 1)
+            { 
+                gpio_put(S_LIBERADO,0);
+                gpio_put(S_ESQ, 0);
+                gpio_put(S_DIR, 0);
+                autoriza = 0;
+            }
+            
+        }
     }
-    
-
-    
     //--------------------------- FIM DO LOOP --------------------------------------
 
 }
@@ -221,13 +261,13 @@ int liberado(int var){
 int bloqueado (int blok){
 
       if(blok == 0) {
-      
+      // Acionamento S1
         if (gpio_get(SENSOR1))
         {
             gpio_put(SOL2, 1);
-
+            //printf("ACIONOU O S1\n");
             // pictograma Vermelho
-            gpio_put(S_BLOCK,true);
+            gpio_put(S_BLOCK,1);
             gpio_put(S_BUZZ, 1);
             printf("ACIONOU O S1\n");
             blokLib = 0;
@@ -236,13 +276,16 @@ int bloqueado (int blok){
              gpio_put(SOL2, 0);
              gpio_put(S_BLOCK,0);
              gpio_put(S_BUZZ, 0);
+            // printf("ACIONOU O S1\n");
         }
+        // Acionamento S2
          if (gpio_get(SENSOR2))
         {
             gpio_put(SOL1, 1);
+            printf("ACIONOU O S1\n");
 
             // pictograma Vermelho
-            gpio_put(S_BLOCK,true);
+            gpio_put(S_BLOCK,1);
             gpio_put(S_BUZZ, 1);
             printf("ACIONOU O S2\n");
             blokLib = 0;
@@ -252,6 +295,7 @@ int bloqueado (int blok){
              gpio_put(SOL1, 0);
              gpio_put(S_BLOCK,0);
              gpio_put(S_BUZZ, 0);
+             //printf("ACIONOU O S1\n");
         }
     }
     

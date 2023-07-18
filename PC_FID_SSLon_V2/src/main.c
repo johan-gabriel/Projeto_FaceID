@@ -157,7 +157,7 @@ void loop(void){
             bloqueado(0);
             giroGirado=0;
             gpio_put(S_ESQ, 0);
-            gpio_put(S_DIR, 0);
+           // gpio_put(S_DIR, 1);
             autoriza = 0;
             tempo =0;
             
@@ -169,7 +169,7 @@ void loop(void){
     if (autoriza == 0 && giroGirado == 0){
         gpio_put(S_LIBERADO, 0);
         gpio_put(S_ESQ, 0);
-        gpio_put(S_DIR, 0);
+        //gpio_put(S_DIR, 1);
         contador = 0;
         if (contador == 0){
             bloqueado(contador);
@@ -185,7 +185,7 @@ void loop(void){
             gpio_put(S_LIBERADO, 0);
             // Acende o Pictograma verde enquanto não houver terminado o giro ou parar a liberação
             gpio_put(S_ESQ, 1);
-            gpio_put(S_DIR, 1);
+            gpio_put(S_DIR, 0);
             if (giroGirado == 1 && (fimG == 1|| fimG == 2)){
                 blokLib = 1;
                       
@@ -196,7 +196,7 @@ void loop(void){
             bloqueado(0);
             giroGirado =0;
             gpio_put(S_ESQ, 0);
-            gpio_put(S_DIR, 0);
+            //gpio_put(S_DIR, 1);
             autoriza = 0;
             
                 
@@ -205,19 +205,19 @@ void loop(void){
             gpio_put(S_LIBERADO,0);
             // Acende o Pictograma verde enquanto não houver terminado o giro ou parar a liberação
             gpio_put(S_ESQ, 1);
-            gpio_put(S_DIR, 1);
+            gpio_put(S_DIR, 0);
         }
         if (contador == 1 && libBlok == 0)
         {
             gpio_put(S_LIBERADO,0);
             // Acende o Pictograma verde enquanto não houver terminado o giro ou parar a liberação
             gpio_put(S_ESQ, 1);
-            gpio_put(S_DIR, 1);
+            gpio_put(S_DIR, 0);
             if (libBlok == 3 && contador == 1)
             { 
                 gpio_put(S_LIBERADO,0);
                 gpio_put(S_ESQ, 0);
-                gpio_put(S_DIR, 0);
+               // gpio_put(S_DIR, 1);
                 autoriza = 0;
             }
             
@@ -238,25 +238,25 @@ int liberado(int var){
         // S1 = 0 && S2 = 0 
         if (!gpio_get(SENSOR1) && !gpio_get(SENSOR2)){
             aux = 0;
-            //printf("%d", aux);
+            printf("%d", aux);
             return aux;}
 
         // S1 = 1 and S2 = 0 
         if (gpio_get(SENSOR1) && !gpio_get(SENSOR2)){
             aux = 2;
-            //printf("S1 %d", aux);
+            printf("S1 %d", aux);
             return aux;}
         //S1 = 0 and S2 = 1
         if(!gpio_get(SENSOR1) && gpio_get(SENSOR2)){
             aux = 1;
-            //printf("S2 %d", aux);
+            printf("S2 %d", aux);
             return aux;
         }
 
             // S1 = 1 and S2 = 1
         if (gpio_get(SENSOR1) && gpio_get(SENSOR2)){
             aux = 3; 
-            //printf("S1 + S2 %d", aux);
+            printf("S1 + S2 %d", aux);
             return aux;
         }
         //printf(" G: %d ",gaveta);
@@ -267,12 +267,16 @@ int bloqueado (int blok){
     //gpio_put(S_LIBERADO, 0);
       if(blok == 0) {
         if(sslOn == 0){
+            printf("ACIONOU O S1\n");
         if (gpio_get(SENSOR2))
         {
+            printf("ACIONOU O S1\n");
             gpio_put(SOL2, 1);
 
             // pictograma Vermelho
+            
             gpio_put(S_BLOCK,true);
+            gpio_put(S_DIR, 0);
             gpio_put(S_BUZZ, 1);
             printf("ACIONOU O S1\n");
             sinalMisto = true;
@@ -281,6 +285,7 @@ int bloqueado (int blok){
         else{
              gpio_put(SOL2, 0);
              gpio_put(S_BLOCK,0);
+             gpio_put(S_DIR, 1);
              gpio_put(S_BUZZ, 0);
              sinalMisto = false;
         }

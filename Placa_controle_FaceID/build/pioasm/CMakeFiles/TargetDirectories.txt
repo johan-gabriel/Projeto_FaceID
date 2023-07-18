@@ -1,3 +1,3 @@
-C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID/build/pioasm/CMakeFiles/pioasm.dir
-C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID/build/pioasm/CMakeFiles/edit_cache.dir
-C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID/build/pioasm/CMakeFiles/rebuild_cache.dir
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID/build/pioasm/CMakeFiles/pioasm.dir
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID/build/pioasm/CMakeFiles/rebuild_cache.dir

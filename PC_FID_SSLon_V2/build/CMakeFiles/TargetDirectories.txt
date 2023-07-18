@@ -1,4 +1,4 @@
-C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build/CMakeFiles/FaceIDSSL.dir
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build/CMakeFiles/FaceIDSSLFuncional.dir
 C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build/CMakeFiles/rebuild_cache.dir
 C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build/CMakeFiles/ELF2UF2Build.dir
 C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FID_SSLon_V2/build/CMakeFiles/edit_cache.dir

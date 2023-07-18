@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Placa_controle_FaceID/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/Placa_controle_FaceID/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb
