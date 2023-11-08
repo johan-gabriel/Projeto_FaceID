@@ -1,0 +1,34 @@
+The system is: Windows - 10.0.19045 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Versão 19.36.32537 para x86
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.36.32537.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Pico_ETH_CH9121_CODE/C/RX_TX/build/pioasm/CMakeFiles/3.20.5/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Pico_ETH_CH9121_CODE/C/RX_TX/build/pioasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_4f482 && [1/2  50% :: 0.657] Building CXX object CMakeFiles\cmTC_4f482.dir\CMakeCXXCompilerABI.cpp.obj
+Observação: incluindo arquivo: C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
+[2/2 100% :: 3.371] Linking CXX executable cmTC_4f482.exe
+
+
+
