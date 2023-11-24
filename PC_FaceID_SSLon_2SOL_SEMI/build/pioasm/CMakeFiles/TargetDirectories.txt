@@ -1,0 +1,3 @@
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FaceID_SSLon_2SOL/build/pioasm/CMakeFiles/pioasm.dir
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FaceID_SSLon_2SOL/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/TECNICA/Raspberry Pico/Pico/_projetos/Projeto_FaceID/PC_FaceID_SSLon_2SOL/build/pioasm/CMakeFiles/rebuild_cache.dir

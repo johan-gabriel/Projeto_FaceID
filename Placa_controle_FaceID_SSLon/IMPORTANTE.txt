@@ -1,9 +1,0 @@
-********************************** IMPORTANTE *******************************************************
-
-Este firmware fonciona em modelos de catracas com apenas 1 solenoide, testes realizados no predio do
-EastSide nas catracas da recepção. Modelos Kabba com apenas um pino de trik do solenoide....
-
-O giro para acionar o solenoide posui muita folga, permitindo que o giro seja realizado e cancelando 
-o comando da placa de bloqueio...
-
-FUNCIONA SÓ NA KABBA!

@@ -18,6 +18,7 @@ int le_e_salva = 0;
 #define S_ESQ 10 // Pictograma verde
 #define S_DIR 11 // Pictograma verde
 #define S_BLOCK 27 // Pictograma vermelho
+#define S_STANDBY 26 // luz azul
 
 #define S_BUZZ 6 // BUZER
 #define SOL1 15 // SOLENOIDE    
@@ -25,6 +26,7 @@ int le_e_salva = 0;
 #define SENSOR2 20 //SENSOR 
 #define FACE_ID 19 //Sinal de liberardo externo;
 #define SENSOR1 21 //SENSOR
+
 
 void loop(void);
 int liberado(int var);
@@ -284,6 +286,9 @@ void CH9121_init(void)
 
     gpio_init(S_DIR);
     gpio_set_dir(S_DIR, GPIO_OUT);
+
+    gpio_init(S_STANDBY);
+    gpio_set_dir(S_STANDBY, GPIO_OUT);
 
     gpio_init(S_ESQ);
     gpio_set_dir(S_ESQ, GPIO_OUT);
