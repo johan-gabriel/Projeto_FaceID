@@ -25,7 +25,8 @@ int le_e_salva = 0;
 #define SOL1 15 // SOLENOIDE    
 #define SOL2 22 //SOLENOIDE
 #define SENSOR2 20 //SENSOR 
-#define FACE_ID 19 //Sinal de liberardo externo;
+#define FACE_ID 19 //Sinal de liberar do externo;
+#define FACE_ID 18 //Sinal de liberar do externo;
 #define SENSOR1 21 //SENSOR
 
 
@@ -490,7 +491,7 @@ void RX_TX()
         DEV_Delay_ms(1);
 
         while (uart_is_readable(UART_ID0))
-        { 
+        {   
             UBYTE ch0 = uart_getc(UART_ID0);
 
             if ((ch0 != '\0') && (ch0 != 0xAA)) //&& (ch0 != 'V') && (ch0 != 'O') && (ch0 != 'L'))
@@ -1103,7 +1104,7 @@ void RX_TX()
                 tx[2] = 0x0e;
                 DEV_Delay_ms(30);
                 uart_puts(UART_ID0, tx);
-                i++;
+                i++;  
             }
 
             if (i == 3)
@@ -1354,68 +1355,77 @@ void loop(void){
         contador = 1;
         liberar = liberado(contador);
         liberado(contador);
-        
-        // Bloqueia giro > 1
-        if (liberar == 3 && libBlok == 0) {
-            libBlok = 1;
-            giroGirado = 1;
-        }  
-        if (libBlok == 1)
+
+        if (STG == 'i')
         {
-           if(SSH == 'a'){
-                if(liberar == 1)
-                {
-                    libBlok = 2;
-                    giroGirado = 1;
-                    sentido = 3;
-                }
-                if (liberar == 2)
-                {
-                    libBlok = 2;
-                    giroGirado =1;
-                    sentido = 4;
-                }
-            }
-            // Sentido anti-horário
-            if(SSH == 'h')
+             // Bloqueia giro > 1
+            if (liberar == 3 && libBlok == 0) {
+                libBlok = 1;
+                giroGirado = 1;
+            }  
+            if (libBlok == 1)
             {
-                if(liberar == 1)
-                {
-                    libBlok = 2;
-                    giroGirado = 1;
-                    sentido = 4; // manda para a função RX_TX no '¹'
+                if(SSH == 'a'){
+                    if(liberar == 1)
+                    {
+                        libBlok = 2;
+                        giroGirado = 1;
+                        sentido = 3;
+                    }
+                    if (liberar == 2)
+                    {
+                        libBlok = 2;
+                        giroGirado =1;
+                        sentido = 4;
+                    }
                 }
-                if (liberar == 2)
+                // Sentido anti-horário
+                if(SSH == 'h')
                 {
-                    libBlok = 2;
-                    giroGirado =1;
-                    sentido = 3;
-                    
+                    if(liberar == 1)
+                    {
+                        libBlok = 2;
+                        giroGirado = 1;
+                        sentido = 4; // manda para a função RX_TX no '¹'
+                    }
+                    if (liberar == 2)
+                    {
+                        libBlok = 2;
+                        giroGirado =1;
+                        sentido = 3;
+                    }
                 }
+            }  
+            if (libBlok == 2){
+                if (liberar == 0)
+                {
+                    libBlok = 3;
+                    giroGirado = 1;  
+                } 
             }
-            
-        }  
-        if (libBlok == 2){
-            if (liberar == 0)
-            {
-                libBlok = 3;
-                giroGirado = 1;  
-            } 
-        }
-        if (libBlok == 3){
-            //autoriza = 0;
-            bloqueado(0);
-            giroGirado=0;
-            gpio_put(S_ESQ, 0);
-           // gpio_put(S_DIR, 1);
-            autoriza = 0;
-            tempo =0;
-            RX(sentido);
-            abre = false;
-            
-        }
-        //gpio_put(S_LIBERADO, 1);
+            if (libBlok == 3){
+                //autoriza = 0;
+                bloqueado(0);
+                giroGirado=0;
+                gpio_put(S_ESQ, 0);
+            // gpio_put(S_DIR, 1);
+                autoriza = 0;
+                tempo =0;
+                RX(sentido);
+                abre = false;
+            }
+            //gpio_put(S_LIBERADO, 1);
         
+        }
+
+        if(STG == 'm')
+        {
+            
+        }
+        
+
+
+       
     }
     // bloqueado no stand by
     if (autoriza == 0 && giroGirado == 0){
@@ -1648,26 +1658,26 @@ int bloqueado (int blok){
 // Controle de mensagem
 void RX(int mensagem)
 {
-        switch (mensagem)
-        {
-            case 1:
-                uart_puts(UART_ID1, "RPAb");
-                sleep_ms(300);
-                mensagem = 0;
-                break;
-            case 2:
-                mensagem = 0;
-                break;
-            case 3:
-                uart_puts(UART_ID1, "RPAe");
-                sleep_ms(1);
-                mensagem = 0;
-                break;
-            case 4:
-                uart_puts(UART_ID1, "RPAs");
-                sleep_ms(1);
-                mensagem = 0;
-                break;
+    switch (mensagem)
+    {
+        case 1:
+            uart_puts(UART_ID1, "RPAb");
+            sleep_ms(300);
+            mensagem = 0;
+            break;
+        case 2:
+            mensagem = 0;
+            break;
+        case 3:
+            uart_puts(UART_ID1, "RPAe");
+            sleep_ms(1);
+            mensagem = 0;
+            break;
+        case 4:
+            uart_puts(UART_ID1, "RPAs");
+            sleep_ms(1);
+            mensagem = 0;
+            break;
     }
 }
 // Regula a tensão de saida
