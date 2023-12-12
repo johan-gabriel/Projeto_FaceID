@@ -1520,14 +1520,11 @@ int bloqueado (int blok){
              gpio_put(S_BLOCK,0);
              gpio_put(S_BUZZ, 0);
              gpio_put(S_STANDBY,1);
-             
-            
             RX(0);
         }
         // Acionamento S2
          if (gpio_get(SENSOR2))
         {
-            
             gpio_put(SOL1, 1);
             // pictograma Vermelho
             gpio_put(S_BLOCK,1);
@@ -1584,7 +1581,7 @@ void RX(int mensagem)
         {
             case 1:
                 uart_puts(UART_ID1, "RPAb");
-                sleep_ms(300);
+                sleep_ms(500);
                 mensagem = 0;
                 break;
             case 2:

@@ -52,7 +52,7 @@ int inTemp = 0;
 int saida = 0; // sinaliza a mensagem que é enviada
 //int indice = 0;
 char comand;// comando do catraca
-char versFirmware[10] = "V-2E";
+char versFirmware[10] = "V-2EQr";
 int hash,q,valor =0; // vars responsáveis por ler e interpretar a mensagem;
 bool hora_ante = true;
 int y = 0; 
@@ -74,6 +74,14 @@ int valorConfig2 = 0;
 int inicializa = 0;
 
 char stringConfig[] = "0;0;0\n";
+
+//Novo QR
+UCHAR caractere[18] = {};
+int posicao = 0;
+int controla_leitura_qr = 0;
+char RPA;
+int timer1,timer2;
+bool trava_qr = false;
 
 /******************************************************************************
 function:	Open configuration mode
@@ -391,6 +399,8 @@ int segunda_faixa_mascara_de_rede;
 int terceira_faixa_mascara_de_rede;
 int quarta_faixa_mascara_de_rede;
 
+int Trpa = 10000;
+
 void zera_comando()
 {
     get_dados = 0;
@@ -446,6 +456,27 @@ void zera_comando()
     comando[39] = '\0';
 }
 
+void apaga_qr()
+{
+    caractere[0] = '\0';
+    caractere[1] = '\0';
+    caractere[2] = '\0';
+    caractere[3] = '\0';
+    caractere[4] = '\0';
+    caractere[5] = '\0';
+    caractere[6] = '\0';
+    caractere[7] = '\0';
+    caractere[8] = '\0';
+    caractere[9] = '\0';
+    caractere[10] = '\0';
+    caractere[11] = '\0';
+    caractere[12] = '\0';
+    caractere[13] = '\0';
+    caractere[14] = '\0';
+    caractere[15] = '\0';
+   
+}
+
 void RX_TX()
 {  
     valorConfig2 = readLog();
@@ -482,8 +513,8 @@ void RX_TX()
     }
     
      stateConfig = true;
-     while (stateConfig)
-     {
+    while (stateConfig)
+    {
         loop();
         gpio_put(LED_PIN, 1);
         DEV_Delay_ms(1);
@@ -615,15 +646,28 @@ void RX_TX()
                 if (resultado == 0xDC) //   Comando: #EVA / #SFC Status: Em Implementação :)
                 {
 
-                    if ((comando[0] == '#') && (comando[1] == 'E') && (comando[2] == 'V') && (comando[3] == 'A') && (comando[4] == 'n'))
+                    if ((comando[0] == '#') && (comando[1] == 'E') && (comando[2] == 'V') && (comando[3] == 'A')) // && (comando[4] == 'n'))
                     {
-                        comando[0] = '#';
-                        comando[1] = 'I';
-                        comando[2] = 'D';
-                        comando[2] = 'C';
-                        i = 0;
-                    }
+                        if (comando[4] == 'n')
+                        {
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            i = 0;
+                        }
 
+                        if (comando[4] == 's')
+                        {
+                            uart_puts(UART_ID1, "EVAok");
+                            //indice = -34;
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            i = 0;
+                        }
+                    }
                     if ((comando[0] == '#') && (comando[1] == 'S') && (comando[2] == 'F') && (comando[3] == 'C') && ((comando[4] == 's') || (comando[4] == 'n')))
                     {
                         uart_puts(UART_ID1, "SFCok");
@@ -754,14 +798,73 @@ void RX_TX()
                         le_e_salva++;
                         i++;
                     }
-                    /*
-                    if ((comando[0] == '#') && (comando[1] == 'R') && (comando[2] == 'P') && (comando[3] == 'A'))
+                    if ((comando[0] == '#') && (comando[1] == 'R') && (comando[2] == 'P') && (comando[3] == 'A') && (comando[4] != '\0') && (comando[5] != '\0') && (comando[6] != '\0'))
                     {
-                        uart_puts(UART_ID0, "RPAok");
-                        zera_comando();
-                        i = 0;
+
+                        comando[5] = (comando[5] - 48) * 10;
+                        comando[6] = comando[6] - 48;
+                        Trpa = (comando[5] + comando[6]);
+
+                        if (comando[4] == 'a')
+                        {
+                            indice = -32;
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            comando[4] = '\0';
+                            comando[5] = '\0';
+                            comando[6] = '\0';
+                            i = 0;
+                            RPA = 'a';
+                            abre = true;
+                        }
+
+                        if (comando[4] == 'b')
+                        {
+                            uart_puts(UART_ID1, "RPAb");
+                            DEV_Delay_ms(30);
+                            indice = -32;
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            comando[4] = '\0';
+                            comando[5] = '\0';
+                            comando[6] = '\0';
+                            i = 0;
+                        }
+
+                        if (comando[4] == 'e')
+                        {
+                            indice = -32;
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            comando[4] = '\0';
+                            comando[5] = '\0';
+                            comando[6] = '\0';
+                            i = 0;
+                            RPA = 'e';
+                            abre = true;
+                        }
+
+                        if (comando[4] == 's')
+                        {
+                            indice = -32;
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            comando[4] = '\0';
+                            comando[5] = '\0';
+                            comando[6] = '\0';
+                            i = 0;
+                            RPA = 's';
+                            abre = true;
+                        }
                     }
-                    */
                 }
 
                 if (resultado == 0xE4) //   Comando: #GFW / #SLE Status: Em Implementação :)
@@ -826,16 +929,28 @@ void RX_TX()
                         i = 0;
                     }
                     //*/
-                    if ((comando[0] == '#') && (comando[1] == 'S') && (comando[2] == 'L') && (comando[3] == 'G'))
+                    if ((comando[0] == '#') && (comando[1] == 'S') && (comando[2] == 'L') && (comando[3] == 'G') && (comando[4] != '\0') && (comando[5] != '\0') && (comando[6] != '\0'))
                     {
-                        uart_puts(UART_ID1, "RLGok");
-                        indice = -35;
-                        comando[0] = '#';
-                        comando[1] = 'I';
-                        comando[2] = 'D';
-                        comando[3] = 'Y';
-                        i = 0;
-                        abre = true;
+                        
+                        comando[5] = (comando[5] - 48) * 10;
+                        comando[6] = comando[6] - 48;
+                        Trpa = (comando[5] + comando[6]);
+
+                        if (comando[4] == 'a')
+                        {
+                            uart_puts(UART_ID1, "RLGok");
+                            DEV_Delay_ms(30);
+                            indice = -32;
+                            comando[0] = '#';
+                            comando[1] = 'I';
+                            comando[2] = 'D';
+                            comando[3] = 'Y';
+                            comando[4] = '\0';
+                            comando[5] = '\0';
+                            comando[6] = '\0';
+                            i = 0;
+                            abre = true;
+                        }
                     }
 
                     if ((comando[0] == '#') && (comando[1] == 'S') && (comando[2] == 'M') && (comando[3] == 'F'))
@@ -1288,6 +1403,45 @@ void RX_TX()
             }
         }
 
+    // QR code While
+    while (uart_is_readable(UART_ID1))
+        {
+            UBYTE ch1 = uart_getc(UART_ID1);
+            controla_leitura_qr++;
+            //printf("%d", controla_leitura_qr);
+
+            // if (controla_leitura_qr == 18)
+            // {
+            //     controla_leitura_qr = 0;
+            //     printf("\n");
+            // }
+
+            // char buffer[6];
+
+            if ((caractere[0] == 'W') && (caractere[1] == 'B'))
+            {
+                // comando[0] = '#';
+                // comando[1] = 'I';
+                // comando[2] = 'D';
+                // comando[3] = 'Y';
+            }
+
+            if ((caractere[14] != '\0') && (caractere[15] != '\0'))
+            {
+                posicao = 0;
+                DEV_Delay_ms(300);
+                apaga_qr();
+            }
+
+            caractere[posicao] = ch1;
+            if (posicao == 0)
+            {
+                uart_puts(UART_ID1, "EVA01");
+            }
+            uart_putc(UART_ID1, caractere[posicao]);
+            posicao++;
+        }
+
        // novo
         if (SSL[1] != antSSL || SSH != antSSH){
             //printf("Foi mussarelo!: %c", SSL[1]);
@@ -1317,7 +1471,7 @@ void RX_TX()
                 storageLog(stringConfig);
             }
             valorConfig2 = readLog();
-            printf("\nValor da leitura: %d\n", valorConfig2);
+            //printf("\nValor da leitura: %d\n", valorConfig2);
         }
     }
 }
@@ -1334,24 +1488,60 @@ void loop(void){
         autoriza = 1;
         inTemp++;
     }
-    if (inTemp >= 1500)
+    if(auxTemp > Trpa && abre){
+        auxTemp = Trpa * 480;
+    }
+    
+    if (inTemp >= Trpa * 480)
     {
         auxTemp = inTemp;
-      //  printf("%d\n",auxTemp);
+        inTemp = 0;
+        abre = false;
+        RX(5);
+        // printf("|a%d|",auxTemp);
+        // printf("|i%d|",inTemp);
+        // printf("|t%d|",tempo);
+        // printf("|L%d|\n",autoriza);
     }
+    if (stateButton == true)
+    {
+        if (inTemp >= 1500)
+    {
+        auxTemp = inTemp;
+        inTemp = 0;
+        abre = false;
+        RX(5);
+        // printf("|a%d|",auxTemp);
+        // printf("|i%d|",inTemp);
+        // printf("|t%d|",tempo);
+        // printf("|L%d|\n",autoriza);
+    }
+    }
+    
     //Tempo de liberação em ms
     if(tempo == auxTemp){
         autoriza = 0;
-        tempo = 0;
+        // abre = false;
         inTemp = 0;
+        tempo = 0;
+        
+        // Trpa = 0;
+        printf("|a%d|",auxTemp);
+        printf("|i%d|",inTemp);
+        printf("|t%d|",tempo);
+        printf("|L%d|\n",autoriza);
+
     }
-   // printf("|a%d|",auxTemp);
-    //printf(" %d \n",inTemp);
-   // printf("|t%d|",tempo);
+    // printf("|a%d|",auxTemp);
+    // printf("|i%d|",inTemp);
+    // printf("|t%d|",tempo);
+    // printf("|L%d|",abre);
+    // printf("|RPA%d|\n",Trpa);
+
     if (autoriza == 1)
     { 
         tempo++;
-       // printf("Tempo %d\n", tempo);
+        //printf("Tempo %d\n", tempo);
         contador = 1;
         liberar = liberado(contador);
         liberado(contador);
@@ -1366,6 +1556,36 @@ void loop(void){
             if (libBlok == 1)
             {
                 if(SSH == 'a'){
+                    if(RPA == 'e'){
+                        if(liberar == 1)
+                        {
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 3;
+                        }
+                        if (liberar == 2)
+                        {
+                            bloqueado(0);
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 4;
+                        }
+                    }
+                    if(RPA == 's'){
+                        if(liberar == 1)
+                        {
+                            bloqueado(0);
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 3;
+                        }
+                        if (liberar == 2)
+                        {
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 4;
+                        }
+                    }
                     if(liberar == 1)
                     {
                         libBlok = 2;
@@ -1375,13 +1595,44 @@ void loop(void){
                     if (liberar == 2)
                     {
                         libBlok = 2;
-                        giroGirado =1;
+                        giroGirado = 1;
                         sentido = 4;
                     }
                 }
                 // Sentido anti-horário
                 if(SSH == 'h')
                 {
+                    if(RPA == 'e'){
+                        if(liberar == 1)
+                        {
+                            bloqueado(0);
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 3;
+                        }
+                        if (liberar == 2)
+                        {
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 4;
+                        }
+                    }
+                    if(RPA == 's'){
+                        if(liberar == 1)
+                        {
+                            
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 3;
+                        }
+                        if (liberar == 2)
+                        {
+                            bloqueado(0);
+                            libBlok = 2;
+                            giroGirado = 1;
+                            sentido = 4;
+                        }
+                    }
                     if(liberar == 1)
                     {
                         libBlok = 2;
@@ -1412,20 +1663,16 @@ void loop(void){
                 autoriza = 0;
                 tempo =0;
                 RX(sentido);
-                abre = false;
             }
             //gpio_put(S_LIBERADO, 1);
         
         }
 
-        if(STG == 'm')
-        {
+        // if(STG == 'm')
+        // {
             
-        }
-        
-
-
-       
+        // }
+    
     }
     // bloqueado no stand by
     if (autoriza == 0 && giroGirado == 0){
@@ -1482,7 +1729,6 @@ void loop(void){
                // gpio_put(S_DIR, 1);
                 autoriza = 0;
             }
-            
         }
     }    
     if (SPP == true)
@@ -1570,14 +1816,12 @@ int liberado(int var){
             //printf("S1 + S2 %d", aux);
             return aux;
         }
-        //printf(" G: %d ",gaveta);
     } 
     
 }
 
 // controla bloqueio
 int bloqueado (int blok){
-
       if(blok == 0 ) {
       if(SSL[1] == 'f'){
       // Acionamento S1
@@ -1590,22 +1834,10 @@ int bloqueado (int blok){
             gpio_put(S_STANDBY,0);
             Regula_Tensao();
             blokLib = 0;
-            RX(1);
-        }
-        else{
-            saida = 0;
-             gpio_put(SOL2, 0);
-             gpio_put(S_BLOCK,0);
-             gpio_put(S_BUZZ, 0);
-             gpio_put(S_STANDBY,1);
-             
-            
-            RX(0);
         }
         // Acionamento S2
          if (gpio_get(SENSOR2))
         {
-            
             gpio_put(SOL1, 1);
             // pictograma Vermelho
             gpio_put(S_BLOCK,1);
@@ -1613,20 +1845,14 @@ int bloqueado (int blok){
             gpio_put(S_STANDBY,0);
             Regula_Tensao();
             blokLib = 0;
-            RX(1);
-            
         }
-        else{
-            
+        if(!gpio_get(SENSOR2) && !gpio_get(SENSOR1)){
              gpio_put(SOL1, 0);
              gpio_put(S_BLOCK,0);
              gpio_put(S_BUZZ, 0);
              gpio_put(S_STANDBY,1);
-            
-             //printf("ACIONOU O S1\n");
-             RX(0);
         }
-      }
+     }
         if(SSL[1] == 'n'){
             if (gpio_get(SENSOR1))
             {
@@ -1638,7 +1864,6 @@ int bloqueado (int blok){
                 Regula_Tensao();
                 sinalMisto = true;
                 blokLib = 0;
-                RX(1);
             }
             else{
                 gpio_put(SOL1, 0);
@@ -1646,13 +1871,8 @@ int bloqueado (int blok){
                 gpio_put(S_BUZZ, 0);
                 gpio_put(S_STANDBY,1);
                 sinalMisto = false;
-                RX(0);
             }
         }
-        // if(gpio_get(SENSOR2)){
-        //     sslOn = 2;
-        // }
-
     }
 }
 // Controle de mensagem
@@ -1660,11 +1880,11 @@ void RX(int mensagem)
 {
     switch (mensagem)
     {
-        case 1:
-            uart_puts(UART_ID1, "RPAb");
-            sleep_ms(300);
-            mensagem = 0;
-            break;
+        // case 1:
+        //     // uart_puts(UART_ID1, "RPAb");
+        //     // sleep_ms(1);
+        //     mensagem = 0;
+        //     break;
         case 2:
             mensagem = 0;
             break;
@@ -1675,6 +1895,11 @@ void RX(int mensagem)
             break;
         case 4:
             uart_puts(UART_ID1, "RPAs");
+            sleep_ms(1);
+            mensagem = 0;
+            break;
+        case 5:
+            uart_puts(UART_ID1, "RPAn");
             sleep_ms(1);
             mensagem = 0;
             break;

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ch9121_test.h": "c",
+			"bootrom.h": "c",
+			"stdlib.h": "c",
+			"string.h": "c",
+			"stdio.h": "c"
+		}
+	}
+}

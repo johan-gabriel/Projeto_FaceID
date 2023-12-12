@@ -987,7 +987,7 @@ Disassembly of section .text:
 10000876:	2300      	movs	r3, #0
 10000878:	484d      	ldr	r0, [pc, #308]	; (100009b0 <RX+0x1d4>)
 1000087a:	e7d1      	b.n	10000820 <RX+0x44>
-1000087c:	2096      	movs	r0, #150	; 0x96
+1000087c:	20fa      	movs	r0, #250	; 0xfa
 1000087e:	0040      	lsls	r0, r0, #1
 10000880:	f019 fcc4 	bl	1001a20c <sleep_ms>
 10000884:	e7b4      	b.n	100007f0 <RX+0x14>
