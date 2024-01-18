@@ -16,7 +16,7 @@ include(pico_sdk_import.cmake)
 # Define o nome do projeto.
 # Lembre-se de trocar para o nome do seu projeto,
 # após a troca, se houver uma pasta build, remova e rode o comando Configure novamente.
-project(25EQR C CXX ASM)
+project(25EQRteste C CXX ASM)
 
 # Inicializa o SDK do Raspberry Pi Pico.
 pico_sdk_init()
@@ -56,6 +56,8 @@ add_subdirectory(lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI)
 target_link_libraries(${PROJECT_NAME}
     pico_stdlib
     FatFs_SPI
+    hardware_pwm
+    
 )
 
 # Faz com que o build gere arquivos extras para o Pico (.uf2, por exemplo).

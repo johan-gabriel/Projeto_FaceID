@@ -1,4 +1,4 @@
-C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/CMakeFiles/25EQR.dir
+C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/CMakeFiles/25EQRteste.dir
 C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/CMakeFiles/ELF2UF2Build.dir
 C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/CMakeFiles/edit_cache.dir
 C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/CMakeFiles/rebuild_cache.dir

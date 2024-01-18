@@ -1541,6 +1541,7 @@ int bloqueado (int blok){
         else{
             
              gpio_put(SOL1, 0);
+             gpio_put(SOL2, 0);
              gpio_put(S_BLOCK,0);
              gpio_put(S_BUZZ, 0);
              gpio_put(S_STANDBY,1);
@@ -1583,8 +1584,8 @@ void RX(int mensagem)
         switch (mensagem)
         {
             case 1:
-                uart_puts(UART_ID1, "RPAb");
-                sleep_ms(300);
+                // uart_puts(UART_ID1, "RPAb");
+                // sleep_ms(300);
                 mensagem = 0;
                 break;
             case 2:
