@@ -1967,7 +1967,7 @@ int bloqueado(int blok)
         }
         if (SSL[1] == 'n')
         {
-            if (gpio_get(SENSOR1))
+            if (gpio_get(SENSOR1) && !gpio_get(SENSOR2))
             {
                 gpio_put(SOL1, 1);
                 // pictograma Vermelho
