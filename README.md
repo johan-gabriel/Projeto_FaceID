@@ -10,4 +10,11 @@ O circuito é responsável por bloquear o giro da catraca ou torniquet, quando n
 
 ## IMPORTANTE
 
-O Firmware está sugeito a midanças devido a teste em campo. Não é o código final.
+O Firmware está sugeito a mudanças devido a testes em campo. Não é o código final.
+
+## CONFIGURAÇÕES
+Para configurar o tempo de liberação pelo secBox, entre nas configurações do FaceID e coloque o tempo que deseja que fique liberado. Após isso, acione o secBox e coloque o tempo de 1500 ms para que o acionamento não altere o tempo configurado.
+
+Na configuração do FaceID no modulo FACE NV, enquanto o sistema está online é necessário configurar como C ( catraca ) para que não haja conflito no acionamento do secBox e o comando vindo do Catraca. Quando sem rede o sistema irá continuar funcionando pois quando o FaceID perde comunicação com o modulo FACE NV o mesmo aciona o secBox.
+
+
