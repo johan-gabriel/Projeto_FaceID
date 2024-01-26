@@ -1599,7 +1599,9 @@ void loop(void)
             auxTemp = inTemp;
             inTemp = 0;
             abre = false;
-            RX(5);
+            // RX(5);
+            //  RX(5);
+            //   RX(5);
             // printf("|a%d|",auxTemp);
             // printf("|i%d|",inTemp);
             // printf("|t%d|",tempo);
@@ -1611,7 +1613,7 @@ void loop(void)
     if (tempo == auxTemp)
     {
         autoriza = 0;
-        // abre = false;
+        abre = false;
         inTemp = 0;
         tempo = 0;
 
@@ -1759,6 +1761,7 @@ void loop(void)
                 // gpio_put(S_DIR, 1);
                 autoriza = 0;
                 tempo = 0;
+                abre = false;
                 RX(sentido);
             }
             // gpio_put(S_LIBERADO, 1);
