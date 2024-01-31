@@ -1,0 +1,152 @@
+# ninja log v5
+10156	10506	7273104351131923	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj	cfd36d4a81a5b50a
+18	153	7273104247727432	pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	d3847b977754a52f
+775	3170	7273104277854927	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure	ad55c2f2b37e2589
+22	250	7273104248656906	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir	56d795292ca0b129
+344	510	7273104251095709	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download	e92299bcb004137e
+13	343	7273104249596371	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir	3bf7508196105cef
+22	250	7273104248656906	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir	56d795292ca0b129
+251	441	7273104250605986	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download	fb1f073a403993aa
+251	441	7273104250605986	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download	fb1f073a403993aa
+10093	10511	7273104350903388	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj	66dcb7c2a3e4fde7
+10042	10724	7273104352568540	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj	ce76a8e395cb2e69
+13	343	7273104249596371	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir	3bf7508196105cef
+155	482	7273104249506425	pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf	7993d30e2395b6c
+344	510	7273104251095709	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download	e92299bcb004137e
+482	572	7273104251946237	pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	66eee337d7104e04
+572	731	7273104253264472	pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	37d5c68bfcd966d1
+482	572	7273104251946237	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	66eee337d7104e04
+22	101	0	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build	9f6ec63343b679a
+442	640	7273104252494912	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update	9d32adee7a117019
+11529	12029	7273104365446641	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj	6c58be1eebbbe73d
+442	640	7273104252494912	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update	9d32adee7a117019
+510	673	7273104252754770	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update	ea6535ef5bc6eb6a
+510	673	7273104252754770	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update	ea6535ef5bc6eb6a
+13023	13451	7273104380330258	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj	acfe30afe6b6e84d
+572	731	7273104253264472	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	37d5c68bfcd966d1
+640	775	7273104254054019	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch	1e92e4c8280d7162
+247	471	7273107822173128	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done	ba3070d7e5b36c40
+640	775	7273104254054019	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch	1e92e4c8280d7162
+30	121	0	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build	be007757dda0a343
+14033	14746	7273104391976462	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj	c867ccb3a5b844a8
+673	809	7273104254113984	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch	92a93854b2681604
+30	121	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build	be007757dda0a343
+673	809	7273104254113984	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch	92a93854b2681604
+10512	11012	7273104356093707	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj	76bc3925caf1687c
+12080	12718	7273104372663756	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj	eceeffa35fe81035
+775	3170	7273104277854927	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure	ad55c2f2b37e2589
+810	7057	7273104314602760	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure	8a07a4ef936d314d
+10544	11508	7273104360290779	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj	a8b39970204b709c
+810	7057	7273104314602760	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure	8a07a4ef936d314d
+22	101	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build	9f6ec63343b679a
+14689	15443	7273104399700015	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.obj	7c4fc9dc5f01a83d
+10724	11529	7273104360681570	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj	3d23f44f82ace2e8
+102	247	0	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install	561a8260b60ff85d
+12030	13022	7273104376204086	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj	be00a11a7de70e99
+102	247	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install	561a8260b60ff85d
+19575	20240	7273104448384669	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj	ef2fb11e7f175718
+247	471	7273107822173128	CMakeFiles/ELF2UF2Build-complete	ba3070d7e5b36c40
+247	471	7273107822173128	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done	ba3070d7e5b36c40
+247	471	7273107822173128	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/CMakeFiles/ELF2UF2Build-complete	ba3070d7e5b36c40
+9606	10155	7273104347281444	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj	5dfe76f10d57f8ce
+9593	10042	7273104346253844	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj	ec452b872d3c6434
+11956	12512	7273104371083821	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj	3f2e8f79ed88592a
+9610	10092	7273104346713576	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj	a0daeaf2d4a9287c
+9598	10143	7273104347161512	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj	226d30d10331615c
+10144	10543	7273104351341803	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj	7ec4ee7def58ba53
+11674	12328	7273104369054091	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj	a18056278dfddec6
+9602	10600	7273104351421756	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj	91d181e1903ba1b0
+12329	13041	7273104376123181	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj	947af4cf9cb1b83a
+10507	11221	7273104357937924	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj	b81e3f8dbc6e105e
+10601	11416	7273104359979037	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj	a0e1ff3b1796d20a
+11013	11674	7273104361983690	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj	4d569eeae88e308c
+11509	11956	7273104365446641	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj	f0ca73350d3913e3
+11221	12079	7273104365898364	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj	27622785fefe22c7
+11417	12111	7273104367060408	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj	1e71a8d912f508c5
+12112	12892	7273104374731872	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj	d89ec0045e0254b4
+12512	13107	7273104376733779	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj	b5b2ab79c874db7
+12892	13320	7273104378901072	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj	97cd2351c0b77c47
+13107	13504	7273104380580112	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj	ec0e7d9c60b5c9df
+13041	13538	7273104381029860	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj	bf30fa99b9cd7009
+12718	13587	7273104380730024	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj	2181d337c772ed84
+13291	13943	7273104385235948	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj	b4698d7e1cda02d8
+13320	13974	7273104385415855	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj	ec36f895b596a795
+13538	14033	7273104386175416	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj	b2c910ca76e59274
+13587	14134	7273104386675129	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj	50a952dd57dff875
+13504	14302	7273104387974857	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj	debdfc9a74523697
+13451	14353	7273104388954299	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	3815b6b146ea5f96
+14134	14635	7273104391133056	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj	fc4b14c53a14802d
+13974	14646	7273104391692740	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj	3699881c94da18b4
+13943	14688	7273104391842658	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj	aae224a29c8176f7
+14354	14900	7273104394688430	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.obj	3507042f02716e28
+121	294	0	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install	d34c86a6e88def89
+14302	15093	7273104396482255	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.obj	8c950b5d93646a54
+14636	15266	7273104398334452	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.obj	d2c5bb2015d40337
+14901	15366	7273104399018317	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff14a/source/ffsystem.c.obj	8207b9fa3986d24b
+15094	15658	7273104402448754	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj	a112bbb5164fee58
+14647	15664	7273104402568686	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.obj	174caa92a3cdef1d
+15443	15897	7273104404352582	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.obj	8c1f682ad947eae4
+15267	15984	7273104405053102	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff14a/source/ffunicode.c.obj	59822faa74c87e3e
+15366	16110	7273104406683857	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.obj	d8a1dc582973f7ae
+15658	16240	7273104408292940	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.obj	deb65b6708553577
+15664	16427	7273104410132958	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.obj	5d6ce9a132824cea
+15984	16554	7273104411444735	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj	a2bb04899ed091d9
+16110	16568	7273104411493807	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj	bcf46e84dc24ba4b
+15897	16594	7273104411853604	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.obj	50f823c000bf5b94
+14746	16875	7273104414173222	CMakeFiles/26EQR.dir/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff14a/source/ff.c.obj	f05d2b84d085c8e4
+16240	16991	7273104415072710	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj	88ca35985c72bda9
+17744	18409	7273104429274514	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj	af39a8d4aa0428de
+121	294	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install	d34c86a6e88def89
+16554	17255	7273104418294874	CMakeFiles/26EQR.dir/src/SP.c.obj	6e79364e8dd28503
+16594	17282	7273104417946530	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj	2c91c7f5f8c1a94b
+16875	17539	7273104420989231	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj	ca0361e9f666c73f
+16991	17744	7273104423177987	CMakeFiles/26EQR.dir/src/storage.c.obj	2fe612002dbe60f5
+17282	17781	7273104423497803	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj	a39518501be0c083
+17255	17914	7273104424707114	CMakeFiles/26EQR.dir/src/main.c.obj	3dfdb10aecc48b9c
+17539	18289	7273104428494955	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_util/pheap.c.obj	e7e551759849173f
+294	475	7273107822244904	pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete	b6747badcf645caa
+294	475	7273107822244904	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done	b6747badcf645caa
+294	475	7273107822244904	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete	b6747badcf645caa
+294	475	7273107822244904	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done	b6747badcf645caa
+17915	18416	7273104429854177	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj	59adea8f49127059
+17781	18504	7273104430733638	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj	d228ca5a00cae4da
+18401	18714	7273104432822445	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	36407e09f226fb62
+18410	19056	7273104436128962	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj	18561a217c5cea64
+18289	19071	7273104436278872	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_sync/sem.c.obj	d278f5fca460934b
+18416	19190	7273104436978473	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj	781223efe216f969
+20240	20827	7273104453893544	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj	3033e4d895c9b1ce
+18504	19460	7273104440458654	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_time/time.c.obj	83d5b86e0417a4a
+18714	19543	7273104441498063	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj	a18aea3355b9d039
+19057	19575	7273104441648929	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_util/datetime.c.obj	3a824cc678094518
+19071	19611	7273104442047751	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_util/queue.c.obj	50a9d4bae7cc36d
+19190	19640	7273104442267624	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj	d7c9f9500d400555
+19460	20078	7273104446606303	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj	70c005631d71cbc8
+19543	20144	7273104446716247	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj	ecd894bdd2f8491e
+19612	20300	7273104448754452	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj	119019d0486dc7d7
+19641	20388	7273104449603973	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj	7b0bb0a911437bd7
+20079	20508	7273104450495479	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj	5b1ef3bbe5ddf671
+20145	20654	7273104452094562	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj	6a764d7b262b75ea
+20388	20964	7273104455202788	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj	8f8268dcc5910e60
+20508	21146	7273104457313522	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj	f229d13e0d8afc4a
+20300	21163	7273104457483424	CMakeFiles/26EQR.dir/C_/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj	53ebc965e142ac3
+20654	21229	7273104458133062	CMakeFiles/26EQR.dir/src/hw_config.c.obj	35f693a79864e510
+471	3098	7273107848422900	CMakeFiles/26EQR.dir/src/CH9121.c.obj	67591831565633e3
+3098	3790	7273107851781081	26EQR.elf	241dd8d0cc7032b9
+21	85	0	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build	9f6ec63343b679a
+21	85	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build	9f6ec63343b679a
+26	91	0	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build	be007757dda0a343
+26	91	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build	be007757dda0a343
+86	146	0	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install	561a8260b60ff85d
+86	146	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install	561a8260b60ff85d
+91	151	0	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install	d34c86a6e88def89
+91	151	0	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install	d34c86a6e88def89
+146	246	7277131279045641	CMakeFiles/ELF2UF2Build-complete	ba3070d7e5b36c40
+146	246	7277131279045641	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done	ba3070d7e5b36c40
+146	246	7277131279045641	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/CMakeFiles/ELF2UF2Build-complete	ba3070d7e5b36c40
+146	246	7277131279045641	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done	ba3070d7e5b36c40
+151	255	7277131279095615	pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete	b6747badcf645caa
+151	255	7277131279095615	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done	b6747badcf645caa
+151	255	7277131279095615	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete	b6747badcf645caa
+151	255	7277131279095615	C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done	b6747badcf645caa
+246	2917	7277131305686243	CMakeFiles/26EQR.dir/src/CH9121.c.obj	67591831565633e3
+2917	3609	7277131309333252	26EQR.elf	241dd8d0cc7032b9
