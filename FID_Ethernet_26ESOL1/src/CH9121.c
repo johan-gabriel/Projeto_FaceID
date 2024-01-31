@@ -1981,6 +1981,7 @@ int bloqueado(int blok)
                 gpio_put(S_STANDBY, 1);
             }
         }
+    // O modo SSLon irá utilizar apenas um solenoide, o solenoide a ser acionado será o 1.
         if (SSL[1] == 'n')
         {
             if (!gpio_get(SENSOR1) && !gpio_get(SENSOR2))
@@ -1988,18 +1989,37 @@ int bloqueado(int blok)
                 sslOn =0;
             }
             
-            if (gpio_get(SENSOR1) && !gpio_get(SENSOR2) && sslOn == 0)
-            {
-                gpio_put(SOL1, 1);
-                // pictograma Vermelho
-                gpio_put(S_BLOCK, 1);
-                gpio_put(S_BUZZ, 1);
-                gpio_put(S_STANDBY, 0);
-                Regula_Tensao();
-                sinalMisto = true;
-                blokLib = 0;
+            if(SSH == 'h'){
+                 if (!gpio_get(SENSOR1) && gpio_get(SENSOR2) && sslOn == 0)
+                {
+                    gpio_put(SOL1, 1);
+                    // pictograma Vermelho
+                    gpio_put(S_BLOCK, 1);
+                    gpio_put(S_BUZZ, 1);
+                    gpio_put(S_STANDBY, 0);
+                    Regula_Tensao();
+                    sinalMisto = true;
+                    blokLib = 0;
                 
+                }
             }
+        
+            if (SSH=='a')
+            {
+                if (gpio_get(SENSOR1) && !gpio_get(SENSOR2) && sslOn == 0)
+                {
+                    gpio_put(SOL1, 1);
+                    // pictograma Vermelho
+                    gpio_put(S_BLOCK, 1);
+                    gpio_put(S_BUZZ, 1);
+                    gpio_put(S_STANDBY, 0);
+                    Regula_Tensao();
+                    sinalMisto = true;
+                    blokLib = 0;
+                
+                }
+            }
+            
             if (gpio_get(SENSOR2))
             {
                 sslOn =1;
