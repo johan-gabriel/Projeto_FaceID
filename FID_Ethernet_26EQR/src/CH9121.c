@@ -51,7 +51,7 @@ int inTemp = 0;
 int saida = 0; // sinaliza a mensagem que é enviada
 // int indice = 0;
 char comand; // comando do catraca
-char versFirmware[10] = "V-2.6EQr";
+char versFirmware[10] = "FD-2.6";
 int hash, q, valor = 0; // vars responsáveis por ler e interpretar a mensagem;
 bool hora_ante = true;
 int y = 0;
@@ -69,6 +69,7 @@ char antSSH = 'a';
 bool stateConfig = true;
 bool alternador = false;
 int valorConfig2 = 0;
+bool mensagemInit = true;
 
 int inicializa = 0;
 
@@ -343,6 +344,10 @@ void CH9121_init(void)
     sleep_ms(200);
     gpio_put(S_BUZZ, 0);
 
+    uart_puts(UART_ID1, "Placa FACE_ID Inicializada!");
+    sleep_ms(20);
+
+
     gpio_init(SOL2);
     gpio_set_dir(SOL2, GPIO_OUT);
     // Exemplo de saida
@@ -497,6 +502,7 @@ void apaga_qr()
 //end
 void RX_TX()
 {
+     
     valorConfig2 = readLog();
     switch (valorConfig2)
     {
@@ -1629,6 +1635,13 @@ void loop(void)
     // printf("|L%d|",abre);
     // printf("|RPA%d|\n",Trpa);
 
+     if (mensagemInit)
+    {
+        RX(1);
+        sleep_ms(20);
+        mensagemInit = false;
+    }
+
     if (autoriza == 1)
     {
         tempo++;
@@ -1997,11 +2010,11 @@ void RX(int mensagem)
 {
     switch (mensagem)
     {
-    // case 1:
-    //     // uart_puts(UART_ID1, "RPAb");
-    //     // sleep_ms(1);
-    //     mensagem = 0;
-    //     break;
+    case 1:
+        uart_puts(UART_ID1, "Placa FACE_ID Iniciada!");
+        sleep_ms(1);
+        mensagem = 0;
+        break;
     case 2:
         mensagem = 0;
         break;
