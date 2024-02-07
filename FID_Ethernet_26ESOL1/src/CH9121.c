@@ -70,6 +70,7 @@ bool stateConfig = true;
 bool alternador = false;
 int valorConfig2 = 0;
 bool mensagemInit = true;
+bool trava_RPAn = false;
 
 int inicializa = 0;
 
@@ -1587,14 +1588,14 @@ void loop(void)
         auxTemp = Trpa * 480;
     }
 
-    if (inTemp >= Trpa * 480)
+    if (inTemp >= Trpa * 480 && !trava_RPAn)
     {
         auxTemp = inTemp;
         inTemp = 0;
         abre = false;
-        RX(5);
+        
         // printf("|a%d|",auxTemp);
-        // printf("|i%d|",inTemp);
+         printf("|i%d|",inTemp);
         // printf("|t%d|",tempo);
         // printf("|L%d|\n",autoriza);
     }
@@ -1605,7 +1606,7 @@ void loop(void)
             auxTemp = inTemp;
             inTemp = 0;
             abre = false;
-            // RX(5);
+             //RX(5);
             //  RX(5);
             //   RX(5);
             // printf("|a%d|",auxTemp);
@@ -1622,7 +1623,7 @@ void loop(void)
         abre = false;
         inTemp = 0;
         tempo = 0;
-
+        RX(5);
         // Trpa = 0;
         printf("|a%d|", auxTemp);
         printf("|i%d|", inTemp);
@@ -1635,12 +1636,7 @@ void loop(void)
     // printf("|L%d|",abre);
     // printf("|RPA%d|\n",Trpa);
 
-     if (mensagemInit)
-    {
-        RX(1);
-        sleep_ms(20);
-        mensagemInit = false;
-    }
+  
 
     if (autoriza == 1)
     {
@@ -1654,9 +1650,10 @@ void loop(void)
         {
             // Bloqueia giro > 1
             if (liberar == 3 && libBlok == 0)
-            {
+            { 
                 libBlok = 1;
                 giroGirado = 1;
+                trava_RPAn = true;
             }
             if (libBlok == 1)
             {
@@ -1776,6 +1773,7 @@ void loop(void)
                 tempo = 0;
                 abre = false;
                 RX(sentido);
+                trava_RPAn = false;
             }
             // gpio_put(S_LIBERADO, 1);
         }
@@ -2002,6 +2000,14 @@ int bloqueado(int blok)
                     blokLib = 0;
                 
                 }
+                else
+                {
+                    gpio_put(SOL1, 0);
+                    gpio_put(S_BLOCK, 0);
+                    gpio_put(S_BUZZ, 0);
+                    gpio_put(S_STANDBY, 1);
+                    sinalMisto = false;
+                }
             }
         
             if (SSH=='a')
@@ -2018,6 +2024,14 @@ int bloqueado(int blok)
                     blokLib = 0;
                 
                 }
+                else
+                {
+                    gpio_put(SOL1, 0);
+                    gpio_put(S_BLOCK, 0);
+                    gpio_put(S_BUZZ, 0);
+                    gpio_put(S_STANDBY, 1);
+                    sinalMisto = false;
+                }
             }
             
             if (gpio_get(SENSOR2))
@@ -2025,14 +2039,7 @@ int bloqueado(int blok)
                 sslOn =1;
             }
             
-            else
-            {
-                gpio_put(SOL1, 0);
-                gpio_put(S_BLOCK, 0);
-                gpio_put(S_BUZZ, 0);
-                gpio_put(S_STANDBY, 1);
-                sinalMisto = false;
-            }
+            
         }
     }
 }
