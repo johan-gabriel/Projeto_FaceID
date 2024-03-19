@@ -52,7 +52,7 @@ int inTemp = 0;
 int saida = 0; // sinaliza a mensagem que é enviada
 //int indice = 0;
 char comand;// comando do catraca
-char versFirmware[10] = "V-2.5EQr";
+char versFirmware[10] = "V-2.6EQr";
 int hash,q,valor =0; // vars responsáveis por ler e interpretar a mensagem;
 bool hora_ante = true;
 int y = 0; 
@@ -82,6 +82,8 @@ int controla_leitura_qr = 0;
 char RPA;
 int timer1,timer2;
 bool trava_qr = false;
+
+int destrava = 0;
 
 /******************************************************************************
 function:	Open configuration mode
@@ -278,7 +280,7 @@ void CH9121_init(void)
     // Defina o estado inicial do pino
     bool initial_state = true; // Substitua true por false se desejar um estado inicial baixo (LOW)
 
-    //stdio_init_all();
+    // stdio_init_all();
     gpio_init(RESET_PIN);
     gpio_set_dir(RESET_PIN, GPIO_OUT);
     gpio_put(RESET_PIN, initial_state);
@@ -323,7 +325,26 @@ void CH9121_init(void)
     gpio_init(S_BUZZ);
     gpio_set_dir(S_BUZZ, GPIO_OUT);
     gpio_pull_up(S_BUZZ);
-    
+
+    gpio_put(S_BUZZ, 1);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 0);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 1);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 0);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 1);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 0);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 1);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 0);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 1);
+    sleep_ms(200);
+    gpio_put(S_BUZZ, 0);
 
     gpio_init(SOL2);
     gpio_set_dir(SOL2, GPIO_OUT);
@@ -331,21 +352,20 @@ void CH9121_init(void)
     gpio_init(SOL1);
     gpio_set_dir(SOL1, GPIO_OUT);
 
-    //Exemplo de entrada
+    // Exemplo de entrada
     gpio_init(FACE_ID);
     gpio_set_dir(FACE_ID, GPIO_IN);
     gpio_pull_up(FACE_ID);
 
-    //Exemplo de entrada
+    // Exemplo de entrada
     gpio_init(SENSOR2);
     gpio_set_dir(SENSOR2, GPIO_IN);
     gpio_pull_down(SENSOR2);
 
-    //Exemplo de entrada
+    // Exemplo de entrada
     gpio_init(SENSOR1);
     gpio_set_dir(SENSOR1, GPIO_IN);
     gpio_pull_down(SENSOR1);
-
 }
 
 /******************************************************************************
@@ -515,11 +535,14 @@ void RX_TX()
      stateConfig = true;
     while (stateConfig)
     {
+
         loop();
         gpio_put(LED_PIN, 1);
         DEV_Delay_ms(1);
         gpio_put(LED_PIN, 0);
         DEV_Delay_ms(1);
+
+        destrava++;
 
         while (uart_is_readable(UART_ID0))
         {   
@@ -586,6 +609,57 @@ void RX_TX()
             if (i == 0)
             {
                 resultado = (comando[1] + comando[2] + comando[3]);
+                if (destrava > 500)
+                {
+                    indice = -39;
+                    comando[0] = '\0';
+                    comando[1] = '\0';
+                    comando[2] = '\0';
+                    comando[3] = '\0';
+                    comando[4] = '\0';
+                    comando[5] = '\0';
+                    comando[6] = '\0';
+                    comando[7] = '\0';
+                    comando[8] = '\0';
+                    comando[9] = '\0';
+                    comando[10] = '\0';
+                    comando[11] = '\0';
+                    comando[12] = '\0';
+                    comando[13] = '\0';
+                    comando[14] = '\0';
+                    comando[15] = '\0';
+                    comando[16] = '\0';
+                    comando[17] = '\0';
+                    comando[18] = '\0';
+                    comando[19] = '\0';
+                    comando[20] = '\0';
+                    comando[21] = '\0';
+                    comando[22] = '\0';
+                    comando[23] = '\0';
+                    comando[24] = '\0';
+                    comando[25] = '\0';
+                    comando[26] = '\0';
+                    comando[27] = '\0';
+                    comando[28] = '\0';
+                    comando[29] = '\0';
+                    comando[30] = '\0';
+                    comando[31] = '\0';
+                    comando[32] = '\0';
+                    comando[33] = '\0';
+                    comando[34] = '\0';
+                    comando[35] = '\0';
+                    comando[36] = '\0';
+                    comando[37] = '\0';
+                    comando[38] = '\0';
+                    comando[39] = '\0';
+                    DEV_Delay_ms(20);
+                    indice = 0;
+                    comando[0] = '#';
+                    comando[1] = 'V';
+                    comando[2] = 'O';
+                    comando[3] = 'L';
+                    destrava = 0;
+                }
 
                 if (((comando[0] == '#') && (comando[1] == '#')) && ((comando[2] == 'O') || (comando[2] == 'V')) && ((comando[3] == 'L') || (comando[3] == 'O')))
                 // if ((comando[0] == '#') && ((comando[1] == 'G') && (comando[2] == 'I') && (comando[3] == 'P')))

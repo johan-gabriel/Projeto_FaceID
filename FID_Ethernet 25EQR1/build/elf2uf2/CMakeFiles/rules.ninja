@@ -47,7 +47,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\User\Documents\Pico\pico-sdk\tools\elf2uf2 -B"C:\Users\User\Documents\Pico\_projetos\Projeto_FaceID\FID_Ethernet 25EQR\build\elf2uf2"
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\User\Documents\Pico\pico-sdk\tools\elf2uf2 -B"C:\Users\User\Documents\Pico\_projetos\Projeto_FaceID\FID_Ethernet 25EQR1\build\elf2uf2"
   description = Re-running CMake...
   generator = 1
 

@@ -10,9 +10,8 @@
 #include "hardware/irq.h"
 #include "pico/binary_info.h"
 #include "hardware/gpio.h"
-#include <hardware/pwm.h>
 
-#define RESET_PIN 28 // Pino nRESET (pino 26) na Raspberry Pi Pico
+#define RESET_PIN 28// Pino nRESET (pino 26) na Raspberry Pi Pico
 #define LED_PIN 25
 
 /// \tag::uart_advanced[]

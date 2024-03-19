@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR
+# Install script for directory: C:/Users/tecnica/Downloads/FID_Ethernet 25EQR/FID_Ethernet 25EQR
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/pico-sdk/cmake_install.cmake")
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/cmake_install.cmake")
+  include("C:/Users/tecnica/Downloads/FID_Ethernet 25EQR/FID_Ethernet 25EQR/build/pico-sdk/cmake_install.cmake")
+  include("C:/Users/tecnica/Downloads/FID_Ethernet 25EQR/FID_Ethernet 25EQR/build/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet 25EQR/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/tecnica/Downloads/FID_Ethernet 25EQR/FID_Ethernet 25EQR/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

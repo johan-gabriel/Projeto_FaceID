@@ -1,7 +1,6 @@
 #include "CH9121.h"
 #include "storage.h"
 
-
 UCHAR CH9121_LOCAL_IP[4] = {};    // LOCAL IP
 UCHAR CH9121_GATEWAY[4] = {};     // GATEWAY
 UCHAR CH9121_SUBNET_MASK[4] = {}; // SUBNET MASK
@@ -15,7 +14,7 @@ UCHAR CH9121_VERSION_NUMBER = 0x01; // CHIP VERSION NUMBER
 UCHAR tx[8] = {0x57, 0xAB};
 UCHAR open_configuration[4] = {0x55, 0xAA, 0x5A};
 int salva_e_reinicia = 0;
-int le_e_salva = 0;   //
+int le_e_salva = 0;
 #define S_LIBERADO 25 // Led interno da rasp
 #define S_ESQ 10      // Pictograma verde
 #define S_DIR 11      // Pictograma verde
@@ -29,97 +28,6 @@ int le_e_salva = 0;   //
 #define FACE_ID 19 // Sinal de liberar do externo;
 #define FACE_ID 18 // Sinal de liberar do externo;
 #define SENSOR1 21 // SENSOR
-
-#define NOTE_B0 31
-#define NOTE_C1 33
-#define NOTE_CS1 35
-#define NOTE_D1 37
-#define NOTE_DS1 39
-#define NOTE_E1 41
-#define NOTE_F1 44
-#define NOTE_FS1 46
-#define NOTE_G1 49
-#define NOTE_GS1 52
-#define NOTE_A1 55
-#define NOTE_AS1 58
-#define NOTE_B1 62
-#define NOTE_C2 65
-#define NOTE_CS2 69
-#define NOTE_D2 73
-#define NOTE_DS2 78
-#define NOTE_E2 82
-#define NOTE_F2 87
-#define NOTE_FS2 93
-#define NOTE_G2 98
-#define NOTE_GS2 104
-#define NOTE_A2 110
-#define NOTE_AS2 117
-#define NOTE_B2 123
-#define NOTE_C3 131
-#define NOTE_CS3 139
-#define NOTE_D3 147
-#define NOTE_DS3 156
-#define NOTE_E3 165
-#define NOTE_F3 175
-#define NOTE_FS3 185
-#define NOTE_G3 196
-#define NOTE_GS3 208
-#define NOTE_A3 220
-#define NOTE_AS3 233
-#define NOTE_B3 247
-#define NOTE_C4 262
-#define NOTE_CS4 277
-#define NOTE_D4 294
-#define NOTE_DS4 311
-#define NOTE_E4 330
-#define NOTE_F4 349
-#define NOTE_FS4 370
-#define NOTE_G4 392
-#define NOTE_GS4 415
-#define NOTE_A4 440
-#define NOTE_AS4 466
-#define NOTE_B4 494
-#define NOTE_C5 523
-#define NOTE_CS5 554
-#define NOTE_D5 587
-#define NOTE_DS5 622
-#define NOTE_E5 659
-#define NOTE_F5 698
-#define NOTE_FS5 740
-#define NOTE_G5 784
-#define NOTE_GS5 831
-#define NOTE_A5 880
-#define NOTE_AS5 932
-#define NOTE_B5 988
-#define NOTE_C6 1047
-#define NOTE_CS6 1109
-#define NOTE_D6 1175
-#define NOTE_DS6 1245
-#define NOTE_E6 1319
-#define NOTE_F6 1397
-#define NOTE_FS6 1480
-#define NOTE_G6 1568
-#define NOTE_GS6 1661
-#define NOTE_A6 1760
-#define NOTE_AS6 1865
-#define NOTE_B6 1976
-#define NOTE_C7 2093
-#define NOTE_CS7 2217
-#define NOTE_D7 2349
-#define NOTE_DS7 2489
-#define NOTE_E7 2637
-#define NOTE_F7 2794
-#define NOTE_FS7 2960
-#define NOTE_G7 3136
-#define NOTE_GS7 3322
-#define NOTE_A7 3520
-#define NOTE_AS7 3729
-#define NOTE_B7 3951
-#define NOTE_C8 4186
-#define NOTE_CS8 4435
-#define NOTE_D8 4699
-#define NOTE_DS8 4978
-#define REST 0
 
 void loop(void);
 int liberado(int var);
@@ -136,7 +44,6 @@ int libBlok = 0;
 int blokLib = 0;
 int giroGirado = 0;
 int autoriza = 0;
-int tempoMusica = 140;
 int tempo = 0;
 int auxTemp = 3000; // tempo reserva; Para conseguir aumentar o tempo de liberação
 int inTemp = 0;
@@ -174,88 +81,6 @@ int controla_leitura_qr = 0;
 char RPA;
 int timer1, timer2;
 bool trava_qr = false;
-
-// notes of the moledy followed by the duration.
-// a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
-// !!negative numbers are used to represent dotted notes,
-// so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
-int melody[] = {
-
-    // We Wish You a Merry Christmas
-    // Score available at https://musescore.com/user/6208766/scores/1497501
-
-    NOTE_C5, 4, // 1
-    NOTE_F5, 4, NOTE_F5, 8, NOTE_G5, 8, NOTE_F5, 8, NOTE_E5, 8,
-    NOTE_D5, 4, NOTE_D5, 4, NOTE_D5, 4,
-    NOTE_G5, 4, NOTE_G5, 8, NOTE_A5, 8, NOTE_G5, 8, NOTE_F5, 8,
-    NOTE_E5, 4, NOTE_C5, 4, NOTE_C5, 4,
-    NOTE_A5, 4, NOTE_A5, 8, NOTE_AS5, 8, NOTE_A5, 8, NOTE_G5, 8,
-    NOTE_F5, 4, NOTE_D5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-
-    NOTE_F5, 2, NOTE_C5, 4, // 8
-    NOTE_F5, 4, NOTE_F5, 8, NOTE_G5, 8, NOTE_F5, 8, NOTE_E5, 8,
-    NOTE_D5, 4, NOTE_D5, 4, NOTE_D5, 4,
-    NOTE_G5, 4, NOTE_G5, 8, NOTE_A5, 8, NOTE_G5, 8, NOTE_F5, 8,
-    NOTE_E5, 4, NOTE_C5, 4, NOTE_C5, 4,
-    NOTE_A5, 4, NOTE_A5, 8, NOTE_AS5, 8, NOTE_A5, 8, NOTE_G5, 8,
-    NOTE_F5, 4, NOTE_D5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-    NOTE_F5, 2, NOTE_C5, 4,
-
-    NOTE_F5, 4, NOTE_F5, 4, NOTE_F5, 4, // 17
-    NOTE_E5, 2, NOTE_E5, 4,
-    NOTE_F5, 4, NOTE_E5, 4, NOTE_D5, 4,
-    NOTE_C5, 2, NOTE_A5, 4,
-    NOTE_AS5, 4, NOTE_A5, 4, NOTE_G5, 4,
-    NOTE_C6, 4, NOTE_C5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-    NOTE_F5, 2, NOTE_C5, 4,
-    NOTE_F5, 4, NOTE_F5, 8, NOTE_G5, 8, NOTE_F5, 8, NOTE_E5, 8,
-    NOTE_D5, 4, NOTE_D5, 4, NOTE_D5, 4,
-
-    NOTE_G5, 4, NOTE_G5, 8, NOTE_A5, 8, NOTE_G5, 8, NOTE_F5, 8, // 27
-    NOTE_E5, 4, NOTE_C5, 4, NOTE_C5, 4,
-    NOTE_A5, 4, NOTE_A5, 8, NOTE_AS5, 8, NOTE_A5, 8, NOTE_G5, 8,
-    NOTE_F5, 4, NOTE_D5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-    NOTE_F5, 2, NOTE_C5, 4,
-    NOTE_F5, 4, NOTE_F5, 4, NOTE_F5, 4,
-    NOTE_E5, 2, NOTE_E5, 4,
-    NOTE_F5, 4, NOTE_E5, 4, NOTE_D5, 4,
-
-    NOTE_C5, 2, NOTE_A5, 4, // 36
-    NOTE_AS5, 4, NOTE_A5, 4, NOTE_G5, 4,
-    NOTE_C6, 4, NOTE_C5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-    NOTE_F5, 2, NOTE_C5, 4,
-    NOTE_F5, 4, NOTE_F5, 8, NOTE_G5, 8, NOTE_F5, 8, NOTE_E5, 8,
-    NOTE_D5, 4, NOTE_D5, 4, NOTE_D5, 4,
-    NOTE_G5, 4, NOTE_G5, 8, NOTE_A5, 8, NOTE_G5, 8, NOTE_F5, 8,
-    NOTE_E5, 4, NOTE_C5, 4, NOTE_C5, 4,
-
-    NOTE_A5, 4, NOTE_A5, 8, NOTE_AS5, 8, NOTE_A5, 8, NOTE_G5, 8, // 45
-    NOTE_F5, 4, NOTE_D5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-    NOTE_F5, 2, NOTE_C5, 4,
-    NOTE_F5, 4, NOTE_F5, 8, NOTE_G5, 8, NOTE_F5, 8, NOTE_E5, 8,
-    NOTE_D5, 4, NOTE_D5, 4, NOTE_D5, 4,
-    NOTE_G5, 4, NOTE_G5, 8, NOTE_A5, 8, NOTE_G5, 8, NOTE_F5, 8,
-    NOTE_E5, 4, NOTE_C5, 4, NOTE_C5, 4,
-
-    NOTE_A5, 4, NOTE_A5, 8, NOTE_AS5, 8, NOTE_A5, 8, NOTE_G5, 8, // 53
-    NOTE_F5, 4, NOTE_D5, 4, NOTE_C5, 8, NOTE_C5, 8,
-    NOTE_D5, 4, NOTE_G5, 4, NOTE_E5, 4,
-    NOTE_F5, 2, REST, 4};
-
-// sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
-// there are two values per note (pitch and duration), so for each note there are four bytes
-int notes = sizeof(melody) / sizeof(melody[0]) / 2;
-
-// this calculates the duration of a whole note in ms
-int wholenote = (60000 * 4) / 140;
-
-int divider = 0, noteDuration = 0;
 
 /******************************************************************************
 function:	Open configuration mode
@@ -573,6 +398,7 @@ int dados_6_bytes = 0;
 int get_dados = 0;
 char *mensagem;
 char ASN1, ASN2, ASN3;
+int destrava = 0;
 
 int primeira_faixa_ip;
 int segunda_faixa_ip;
@@ -712,6 +538,8 @@ void RX_TX()
         gpio_put(LED_PIN, 0);
         DEV_Delay_ms(1);
 
+        destrava++;
+
         while (uart_is_readable(UART_ID0))
         {
             UBYTE ch0 = uart_getc(UART_ID0);
@@ -778,6 +606,58 @@ void RX_TX()
             {
                 resultado = (comando[1] + comando[2] + comando[3]);
 
+                if (destrava > 500)  // Função para impedir que a placa trave ao receber um comando errado
+                {
+                    indice = -39;
+                    comando[0] = '\0';
+                    comando[1] = '\0';
+                    comando[2] = '\0';
+                    comando[3] = '\0';
+                    comando[4] = '\0';
+                    comando[5] = '\0';
+                    comando[6] = '\0';
+                    comando[7] = '\0';
+                    comando[8] = '\0';
+                    comando[9] = '\0';
+                    comando[10] = '\0';
+                    comando[11] = '\0';
+                    comando[12] = '\0';
+                    comando[13] = '\0';
+                    comando[14] = '\0';
+                    comando[15] = '\0';
+                    comando[16] = '\0';
+                    comando[17] = '\0';
+                    comando[18] = '\0';
+                    comando[19] = '\0';
+                    comando[20] = '\0';
+                    comando[21] = '\0';
+                    comando[22] = '\0';
+                    comando[23] = '\0';
+                    comando[24] = '\0';
+                    comando[25] = '\0';
+                    comando[26] = '\0';
+                    comando[27] = '\0';
+                    comando[28] = '\0';
+                    comando[29] = '\0';
+                    comando[30] = '\0';
+                    comando[31] = '\0';
+                    comando[32] = '\0';
+                    comando[33] = '\0';
+                    comando[34] = '\0';
+                    comando[35] = '\0';
+                    comando[36] = '\0';
+                    comando[37] = '\0';
+                    comando[38] = '\0';
+                    comando[39] = '\0';
+                    DEV_Delay_ms(20);
+                    indice = 0;
+                    comando[0] = '#';
+                    comando[1] = 'V';
+                    comando[2] = 'O';
+                    comando[3] = 'L';
+                    destrava = 0;
+                }
+
                 if (((comando[0] == '#') && (comando[1] == '#')) && ((comando[2] == 'O') || (comando[2] == 'V')) && ((comando[3] == 'L') || (comando[3] == 'O')))
                 // if ((comando[0] == '#') && ((comando[1] == 'G') && (comando[2] == 'I') && (comando[3] == 'P')))
                 {
@@ -801,6 +681,7 @@ void RX_TX()
                     {
                         zera_comando();
                         // i = 0;
+                        destrava = 0;
                     }
                 }
 
@@ -989,12 +870,6 @@ void RX_TX()
                         GIS_valido = 1;
                         le_e_salva++;
                         i++;
-                    }
-                    if ((comando[0] == '#') && (comando[1] == 'N') && (comando[2] == 'A') && (comando[3] == 'T') && (comando[4] == 'A') && (comando[5] == 'L'))
-                    {
-                        zera_comando();
-                        
-                        i = 0;
                     }
                     if ((comando[0] == '#') && (comando[1] == 'R') && (comando[2] == 'P') && (comando[3] == 'A') && (comando[4] != '\0') && (comando[5] != '\0') && (comando[6] != '\0'))
                     {
@@ -1919,7 +1794,6 @@ void loop(void)
             gpio_put(S_ESQ, 1);
             gpio_put(S_DIR, 0);
             gpio_put(S_STANDBY, 0);
-
             if (giroGirado == 1 && (fimG == 1 || fimG == 2))
             {
                 blokLib = 1;
@@ -2084,11 +1958,9 @@ int bloqueado(int blok)
             if (!gpio_get(SENSOR2) && !gpio_get(SENSOR1))
             {
                 gpio_put(SOL1, 0);
-                gpio_put(SOL2, 0);
                 gpio_put(S_BLOCK, 0);
                 gpio_put(S_BUZZ, 0);
                 gpio_put(S_STANDBY, 1);
-                // Regula_Tensao();
             }
         }
         if (SSL[1] == 'n')
@@ -2110,7 +1982,6 @@ int bloqueado(int blok)
                 gpio_put(S_BLOCK, 0);
                 gpio_put(S_BUZZ, 0);
                 gpio_put(S_STANDBY, 1);
-                // Regula_Tensao();
                 sinalMisto = false;
             }
         }
@@ -2146,44 +2017,6 @@ void RX(int mensagem)
         break;
     }
 }
-
-// change this to make the song slower or faster
-
-// change this to whichever pin you want to use
-
-
-void setup()
-{
-    // iterate over the notes of the melody.
-    // Remember, the array is twice the number of notes (notes + durations)
-    for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2)
-    {
-
-        // calculates the duration of each note
-        divider = melody[thisNote + 1];
-        if (divider > 0)
-        {
-            // regular note, just proceed
-            noteDuration = (wholenote) / divider;
-        }
-        else if (divider < 0)
-        {
-            // dotted notes are represented with negative durations!!
-            noteDuration = (wholenote) / abs(divider);
-            noteDuration *= 1.5; // increases the duration in half for dotted notes
-        }
-
-        // we only play the note for 90% of the duration, leaving 10% as a pause
-        tone(S_BUZZ, melody[thisNote], noteDuration * 0.9);
-
-        // Wait for the specief duration before playing the next note.
-        DEV_Delay_ms(noteDuration);
-
-        // stop the waveform generation before the next note.
-        noTone(S_BUZZ);
-    }
-}
-
 // Regula a tensão de saida
 void Regula_Tensao()
 {

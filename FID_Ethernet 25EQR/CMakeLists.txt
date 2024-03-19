@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 # O diretório onde está o SDK, neste caso apontando para duas pastas abaixo.
 # Você pode também utilizar o caminho absoluto, mas isso não é recomendado.
 # O caminho aqui é relativo à pasta ./build do projeto.
-set(PICO_SDK_PATH "../../../../pico-sdk")
+set(PICO_SDK_PATH "C:/Users/tecnica/Documents/Pico/pico-sdk")
 
 # Inclui o SDK do Raspberry Pi Pico no projeto.
 include(pico_sdk_import.cmake)
