@@ -77,7 +77,7 @@ int readLog() {
     FRESULT res;
     FRESULT readResult;
     FIL leitor;
-    char leitura[7];
+    char leitura[11];
     UINT bytesRead;
 
     res = f_open(&leitor, LOG_FILE_PATH, FA_READ);

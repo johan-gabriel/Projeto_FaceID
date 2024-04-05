@@ -76,7 +76,7 @@ bool sslOff = false;
 
 int inicializa = 0;
 
-char stringConfig[] = "0;0;0;0\n";
+char stringConfig[] = "0;0;0;0;0;0;\n";
 
 char antSPG = 'p';
 
@@ -93,7 +93,7 @@ bool trava_qr = false;
 int SNE = 1;
 int dezena_SNE = 48;
 int unidade_SNE = 49;
-int mensagem_inicializacao = 0;
+int mensagem_inicializacao = 2;
 int segura_primeiro_envio = 0;
 // end
 /******************************************************************************
@@ -338,25 +338,25 @@ void CH9121_init(void)
     gpio_pull_up(S_BUZZ);
 
     //Buz init
-    gpio_put(S_BUZZ, 1);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 0);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 1);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 0);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 1);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 0);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 1);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 0);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 1);
-    sleep_ms(200);
-    gpio_put(S_BUZZ, 0);
+        gpio_put(S_BUZZ, 1);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 0);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 1);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 0);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 1);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 0);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 1);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 0);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 1);
+        sleep_ms(200);
+        gpio_put(S_BUZZ, 0);
     // Buz out
 
     mensagem_inicializacao = 1;
@@ -833,6 +833,7 @@ void RX_TX()
                         if ((SNE >= 0) && (SNE <= 99))
                         {
                             dezena_SNE = (SNE / 10) + 48;
+                            
                             unidade_SNE = (SNE % 10) + 48;
                         }
 
@@ -1642,9 +1643,10 @@ void RX_TX()
         }
 
        // QR code While
+     
         while (uart_is_readable(UART_ID1))
         {
-            if (segura_primeiro_envio < 500)
+            if (mensagem_inicializacao == 0)
             {
                 // printf("%02d", posicao);
                 // printf(" - %c\n", caractere[posicao]);
@@ -1682,7 +1684,6 @@ void RX_TX()
                     apaga_qr();
                 }
             }
-            segura_primeiro_envio++;
         }
         // novo
         if (SSL[1] != antSSL || SSH != antSSH || SPG != antSPG)
@@ -1794,11 +1795,15 @@ void loop(void)
         inTemp = 0;
         tempo = 0;
         RX(5);
-        // Trpa = 0;
-        printf("|a%d|", auxTemp);
-        printf("|i%d|", inTemp);
-        printf("|t%d|", tempo);
-        printf("|L%d|\n", autoriza);
+        //Trpa = 0;
+        trava_RPAn = false;
+        printf("|FimG%d|", fimG);
+        printf("|L%d|", liberar);
+        printf("|LB%d|", libBlok);
+        printf("|G%d|\n", giroGirado);
+        printf("|C%d|\n", contador);
+        //printf("|A%d|\n", abre);
+        
     }
     // printf("|a%d|",auxTemp);
     // printf("|i%d|",inTemp);
@@ -2040,6 +2045,7 @@ void loop(void)
             bloqueado(contador);
             libBlok = 0;
             blokLib = 0;
+            trava_RPAn = 0;
         }
     }
 
@@ -2085,8 +2091,10 @@ void loop(void)
             gpio_put(S_ESQ, 0);
             gpio_put(S_DIR, 0);
             // gpio_put(S_DIR, 1);
+            trava_RPAn = false;
             autoriza = 0;
-        }
+            abre = false;
+       }
         if (contador == 0 && giroGirado == 1)
         {
             gpio_put(S_LIBERADO, 0);
