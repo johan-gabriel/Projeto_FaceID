@@ -1,0 +1,3 @@
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_41ESOL1/build/pioasm/CMakeFiles/pioasm.dir
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_41ESOL1/build/pioasm/CMakeFiles/edit_cache.dir
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_41ESOL1/build/pioasm/CMakeFiles/rebuild_cache.dir
