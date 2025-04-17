@@ -1,0 +1,38 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeASMInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/GNU.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/CMakeLists.txt
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/3.25.0/CMakeASMCompiler.cmake
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/3.25.0/CMakeCCompiler.cmake
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/3.25.0/CMakeCXXCompiler.cmake
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/3.25.0/CMakeSystem.cmake
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/pico_sdk_import.cmake
+D:/Projetos/Pico/pico-sdk/cmake/Platform/PICO.cmake
+D:/Projetos/Pico/pico-sdk/cmake/pico_pre_load_platform.cmake
+D:/Projetos/Pico/pico-sdk/cmake/pico_pre_load_toolchain.cmake
+D:/Projetos/Pico/pico-sdk/cmake/pico_utils.cmake
+D:/Projetos/Pico/pico-sdk/cmake/preload/platforms/pico/pico.cmake
+D:/Projetos/Pico/pico-sdk/cmake/preload/platforms/rp2040.cmake
+D:/Projetos/Pico/pico-sdk/cmake/preload/toolchains/find_compiler.cmake
+D:/Projetos/Pico/pico-sdk/cmake/preload/toolchains/pico_arm_gcc.cmake
+D:/Projetos/Pico/pico-sdk/pico_sdk_init.cmake
+D:/Projetos/Pico/pico-sdk/pico_sdk_version.cmake
+D:/Projetos/Pico/pico-sdk/tools/FindELF2UF2.cmake

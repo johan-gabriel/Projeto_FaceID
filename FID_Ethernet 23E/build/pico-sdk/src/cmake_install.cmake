@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/Documents/Pico/pico-sdk/src
+# Install script for directory: D:/Projetos/Pico/pico-sdk/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/pico-sdk/src/common/cmake_install.cmake")
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/pico-sdk/src/rp2_common/cmake_install.cmake")
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/pico-sdk/src/rp2040/cmake_install.cmake")
+  include("D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/pico-sdk/src/common/cmake_install.cmake")
+  include("D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/pico-sdk/src/rp2_common/cmake_install.cmake")
+  include("D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/pico-sdk/src/rp2040/cmake_install.cmake")
 
 endif()
 

@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=C:/Users/User/Documents/Pico/pico-sdk/tools/pioasm
+source_dir=D:/Projetos/Pico/pico-sdk/tools/pioasm
 work_dir=
 

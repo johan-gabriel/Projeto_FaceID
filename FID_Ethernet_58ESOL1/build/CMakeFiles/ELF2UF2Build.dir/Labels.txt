@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/CMakeFiles/ELF2UF2Build
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/CMakeFiles/ELF2UF2Build.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/CMakeFiles/ELF2UF2Build-complete.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

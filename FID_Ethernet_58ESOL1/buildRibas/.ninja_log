@@ -1,0 +1,21 @@
+# ninja log v5
+14	253	7520163669153443	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir	552fdcd0566005fd
+14	253	7520163669153443	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir	552fdcd0566005fd
+26	303	7520163669243397	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir	254425fc0e7e415f
+26	303	7520163669243397	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir	254425fc0e7e415f
+21	618	7520163672107023	pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	9c4925a502dbdd34
+303	705	7520163673646142	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download	809812dd17444b12
+303	705	7520163673646142	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download	809812dd17444b12
+253	723	7520163673576232	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download	a491aabf0129d4b4
+253	723	7520163673576232	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download	a491aabf0129d4b4
+705	1232	7520163679123000	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update	ea334682c0a7a205
+705	1232	7520163679123000	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update	ea334682c0a7a205
+723	1239	7520163679152987	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update	7e901f43e01f38aa
+723	1239	7520163679152987	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update	7e901f43e01f38aa
+1239	1508	7520163681851443	elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch	a0840971cda2eb2e
+1239	1508	7520163681851443	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch	a0840971cda2eb2e
+1233	1516	7520163681821467	pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch	b36b06beb392fc5b
+1233	1516	7520163681821467	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch	b36b06beb392fc5b
+619	1723	7520163680282341	pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf	f5f493731b5e6a2c
+1724	1890	7520163685254695	pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	a341568fcd8d1548
+1724	1890	7520163685254695	D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_58ESOL1/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	a341568fcd8d1548

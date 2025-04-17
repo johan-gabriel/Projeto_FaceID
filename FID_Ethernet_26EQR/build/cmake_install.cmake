@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR
+# Install script for directory: D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/26EQR")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/26EQR")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/cmake_install.cmake")
-  include("C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/cmake_install.cmake")
+  include("D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/cmake_install.cmake")
+  include("D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

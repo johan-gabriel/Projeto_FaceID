@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\96f5676f688ead99420cfe415979c789\PioasmBuild-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\1e162a97c1ec81fec2d4a11697fcddfe\PioasmBuild-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\1fd22bdb8773c23e55105c1846acf442\PioasmBuild.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\pico-sdk\src\rp2_common\cyw43_driver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\PioasmBuild" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1983868D-6F08-306D-9896-058814EA119B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,1 +1,1 @@
-cmd='C:/Program Files/CMake/bin/cmake.exe;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'
+cmd='C:/Program Files/CMake/bin/cmake.exe;-GVisual Studio 16 2019;-Ax64;-Thost=x86;-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools;<SOURCE_DIR><SOURCE_SUBDIR>'

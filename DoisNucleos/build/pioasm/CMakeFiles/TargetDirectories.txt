@@ -1,0 +1,3 @@
+D:/Projetos/Pico/_projetos/Projeto_FaceID/DoisNucleos/build/pioasm/CMakeFiles/pioasm.dir
+D:/Projetos/Pico/_projetos/Projeto_FaceID/DoisNucleos/build/pioasm/CMakeFiles/edit_cache.dir
+D:/Projetos/Pico/_projetos/Projeto_FaceID/DoisNucleos/build/pioasm/CMakeFiles/rebuild_cache.dir

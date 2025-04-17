@@ -1,0 +1,37 @@
+The system is: Windows - 10.0.19045 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30151 para x86
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30151.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_59ESOL1/build/pioasm/CMakeFiles/3.25.0/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: F:/Ribeiro/ProjetoID/Programacao/FirmwaresAtualizacoes/Projeto_FaceID/FID_Ethernet_59ESOL1/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-pn9iku
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_cf947\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_cf947.dir\build.make /nologo -L                  CMakeFiles\cmTC_cf947.dir\build
+Building CXX object CMakeFiles/cmTC_cf947.dir/CMakeCXXCompilerABI.cpp.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_cf947.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=F:\Ribeiro\ProjetoID\Programacao\FirmwaresAtualizacoes\Projeto_FaceID\FID_Ethernet_59ESOL1\build\pioasm\CMakeFiles\CMakeScratch\TryCompile-pn9iku --filter-prefix="ObservaþÒo: incluindo arquivo: " -- C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\tecnica\AppData\Local\Temp\nmAA19.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_cf947.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_cf947.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_cf947.dir\objects1 @C:\Users\tecnica\AppData\Local\Temp\nmAD28.tmp
+
+
+

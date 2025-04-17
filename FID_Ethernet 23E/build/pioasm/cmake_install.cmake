@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/Documents/Pico/pico-sdk/tools/pioasm
+# Install script for directory: D:/Projetos/Pico/pico-sdk/tools/pioasm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

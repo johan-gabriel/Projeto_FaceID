@@ -1,0 +1,124 @@
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/tmp/PioasmBuild-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/Debug/PioasmBuild-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-DOWNLOAD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/Debug/PioasmBuild-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/Debug/PioasmBuild-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/Debug/PioasmBuild-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-CONFIGURE.RULE
+setlocal
+cd D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\pioasm
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-GVisual Studio 16 2019" -Ax64 -Thost=x86 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools" -CD:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/tmp/PioasmBuild-cache-Debug.cmake D:/Projetos/Pico/pico-sdk/tools/pioasm
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/Debug/PioasmBuild-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-BUILD.RULE
+setlocal
+cd D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\pioasm
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\96F5676F688EAD99420CFE415979C789\PIOASMBUILD-INSTALL.RULE
+setlocal
+cd D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\pioasm
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\1E162A97C1EC81FEC2D4A11697FCDDFE\PIOASMBUILD-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/Debug/PioasmBuild-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/Debug/PioasmBuild-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\1FD22BDB8773C23E55105C1846ACF442\PIOASMBUILD.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJETOS\PICO\PICO-SDK\SRC\RP2_COMMON\CYW43_DRIVER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR -BD:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build --check-stamp-file D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

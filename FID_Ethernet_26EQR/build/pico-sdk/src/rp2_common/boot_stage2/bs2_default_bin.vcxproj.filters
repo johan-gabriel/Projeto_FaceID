@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\91b1b97b048c221be678848e545ef0b5\bs2_default.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\CMakeFiles\256b92048080310db5de3cd580c434ec\bs2_default_bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projetos\Pico\pico-sdk\src\rp2_common\boot_stage2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet_26EQR\build\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1983868D-6F08-306D-9896-058814EA119B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

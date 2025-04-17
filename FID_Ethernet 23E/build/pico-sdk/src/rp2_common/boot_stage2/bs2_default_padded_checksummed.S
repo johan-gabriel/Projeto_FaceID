@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

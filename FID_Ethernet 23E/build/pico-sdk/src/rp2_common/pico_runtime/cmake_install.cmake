@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/Documents/Pico/pico-sdk/src/rp2_common/pico_runtime
+# Install script for directory: D:/Projetos/Pico/pico-sdk/src/rp2_common/pico_runtime
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

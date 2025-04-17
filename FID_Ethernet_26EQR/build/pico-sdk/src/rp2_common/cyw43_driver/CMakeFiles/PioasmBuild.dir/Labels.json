@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/1fd22bdb8773c23e55105c1846acf442/PioasmBuild.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/1e162a97c1ec81fec2d4a11697fcddfe/PioasmBuild-complete.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-build.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-configure.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-download.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-install.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-mkdir.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-patch.rule"
 		},
 		{
-			"file" : "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+			"file" : "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/CMakeFiles/96f5676f688ead99420cfe415979c789/PioasmBuild-update.rule"
 		}
 	],
 	"target" : 

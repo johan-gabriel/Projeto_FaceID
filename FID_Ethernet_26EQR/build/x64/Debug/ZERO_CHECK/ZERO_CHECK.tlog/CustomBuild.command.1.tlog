@@ -1,0 +1,10 @@
+^D:\PROJETOS\PICO\_PROJETOS\PROJETO_FACEID\FID_ETHERNET_26EQR\BUILD\CMAKEFILES\D444BBE9EA27C7FDF5E234296C4B9312\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR -BD:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/26EQR.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

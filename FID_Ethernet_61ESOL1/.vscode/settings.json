@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "ch9121_test.h": "c",
+        "bootrom.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "uart.h": "c",
+        "storage.h": "c",
+        "ch9121.h": "c"
+    }
+}

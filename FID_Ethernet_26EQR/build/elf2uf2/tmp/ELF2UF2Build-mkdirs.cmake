@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/User/Documents/Pico/pico-sdk/tools/elf2uf2"
-  "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2"
-  "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2"
-  "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/tmp"
-  "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp"
-  "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src"
-  "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp"
+  "D:/Projetos/Pico/pico-sdk/tools/elf2uf2"
+  "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2"
+  "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2"
+  "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/tmp"
+  "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp"
+  "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src"
+  "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp"
 )
 
-set(configSubDirs )
+set(configSubDirs Debug;Release;MinSizeRel;RelWithDebInfo)
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
 endif()

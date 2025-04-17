@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_26EQR/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/tmp/PioasmBuild-mkdirs.cmake
+D:/Projetos/Pico/pico-sdk/src/rp2_common/cyw43_driver/CMakeLists.txt
+D:/Projetos/Pico/pico-sdk/tools/FindPioasm.cmake

@@ -1,0 +1,101 @@
+int readLog()
+{
+    FRESULT res;
+    FRESULT readResult;
+    FIL leitor;
+    char leitura[17];
+    UINT bytesRead;
+
+    res = f_open(&leitor, LOG_FILE_PATH, FA_READ);
+
+    readResult = f_read(&leitor, leitura, sizeof(leitura), &bytesRead);
+
+    printf("Lido: %s", leitura);
+
+    if (leitura[0] == '0' && leitura[2] == '0' && leitura[4] == '0' && leitura[6] == '0')
+    {
+        acionador = 0;
+        return acionador; // 0000
+    }
+    if (leitura[0] == '0' && leitura[2] == '0' && leitura[4] == '0' && leitura[6] == '1')
+    {
+        acionador = 1;
+        return acionador; // 0001
+    }
+    if (leitura[0] == '0' && leitura[2] == '0' && leitura[4] == '1' && leitura[6] == '0')
+    {
+        acionador = 2;
+        return acionador; // 0010
+    }
+    if (leitura[0] == '0' && leitura[2] == '0' && leitura[4] == '1' && leitura[6] == '1')
+    {
+        acionador = 3;
+        return acionador; // 0011
+    }
+    if (leitura[0] == '0' && leitura[2] == '1' && leitura[4] == '0' && leitura[6] == '0')
+    {
+        acionador = 4;
+        return acionador; // 0100
+    }
+    if (leitura[0] == '0' && leitura[2] == '1' && leitura[4] == '0' && leitura[6] == '1')
+    {
+        acionador = 5;
+        return acionador; // 0101
+    }
+    if (leitura[0] == '0' && leitura[2] == '1' && leitura[4] == '1' && leitura[6] == '0')
+    {
+        acionador = 6;
+        return acionador; // 0110
+    }
+    if (leitura[0] == '0' && leitura[2] == '1' && leitura[4] == '1' && leitura[6] == '1')
+    {
+        acionador = 7;
+        return acionador; // 0111
+    }
+    if (leitura[0] == '1' && leitura[2] == '0' && leitura[4] == '0' && leitura[6] == '0')
+    {
+        acionador = 8;
+        return acionador; // 1000
+    }
+    if (leitura[0] == '1' && leitura[2] == '0' && leitura[4] == '0' && leitura[6] == '1')
+    {
+        acionador = 9;
+        return acionador; // 1001
+    }
+    if (leitura[0] == '1' && leitura[2] == '0' && leitura[4] == '1' && leitura[6] == '0')
+    {
+        acionador = 10;
+        return acionador; // 1010
+    }
+    if (leitura[0] == '1' && leitura[2] == '0' && leitura[4] == '1' && leitura[6] == '1')
+    {
+        acionador = 11;
+        return acionador; // 1011
+    }
+    if (leitura[0] == '1' && leitura[2] == '1' && leitura[4] == '0' && leitura[6] == '0')
+    {
+        acionador = 12;
+        return acionador; // 1100
+    }
+    if (leitura[0] == '1' && leitura[2] == '1' && leitura[4] == '0' && leitura[6] == '1')
+    {
+        acionador = 13;
+        return acionador; // 1101
+    }
+    if (leitura[0] == '1' && leitura[2] == '1' && leitura[4] == '1' && leitura[6] == '0')
+    {
+        acionador = 14;
+        return acionador; // 1110
+    }
+    if (leitura[0] == '1' && leitura[2] == '1' && leitura[4] == '1' && leitura[6] == '1')
+    {
+        acionador = 15;
+        return acionador; // 1111
+    }
+    else
+    {
+        acionador = 0;
+    }
+
+    f_close(&leitor);
+}

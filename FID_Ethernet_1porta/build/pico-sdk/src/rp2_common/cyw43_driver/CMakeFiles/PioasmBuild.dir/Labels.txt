@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet_1porta/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule

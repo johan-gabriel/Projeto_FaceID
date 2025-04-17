@@ -51,7 +51,7 @@ int inTemp = 0;
 int saida = 0; // sinaliza a mensagem que é enviada
 // int indice = 0;
 char comand; // comando do catraca
-char versFirmware[10] = "FD-2.9";
+char versFirmware[10] = "FD-3.0";
 int hash, q, valor = 0; // vars responsáveis por ler e interpretar a mensagem;
 bool hora_ante = true;
 int y = 0;
@@ -1805,13 +1805,7 @@ void loop(void)
             auxTemp = inTemp;
             inTemp = 0;
             abre = false;
-             //RX(5);
-            //  RX(5);
-            //   RX(5);
-            // printf("|a%d|",auxTemp);
-            // printf("|i%d|",inTemp);
-            // printf("|t%d|",tempo);
-            // printf("|L%d|\n",autoriza);
+            
         }
     }
 
@@ -1825,21 +1819,8 @@ void loop(void)
         RX(5);
         //Trpa = 0;
         trava_RPAn = false;
-        printf("|FimG%d|", fimG);
-        printf("|L%d|", liberar);
-        printf("|LB%d|", libBlok);
-        printf("|G%d|\n", giroGirado);
-        printf("|C%d|\n", contador);
-        //printf("|A%d|\n", abre);
-        
     }
-    // printf("|a%d|",auxTemp);
-    // printf("|i%d|",inTemp);
-    // printf("|t%d|",tempo);
-    // printf("|L%d|",abre);
-    // printf("|RPA%d|\n",Trpa);
-
-  
+    
 
     if (autoriza == 1)
     {
@@ -2055,12 +2036,6 @@ void loop(void)
             }
             // gpio_put(S_LIBERADO, 1);
         }
-
-        // if(STG == 'm')
-        // {
-
-        // }
-    
     // bloqueado no stand by
     if (autoriza == 0 && giroGirado == 0)
     {
@@ -2318,7 +2293,6 @@ int liberado(int var)
 // controla bloqueio
 int bloqueado(int blok)
 {
-    
     if (blok == 0)
     {
         if (SSL[1] == 'f')
@@ -2331,6 +2305,7 @@ int bloqueado(int blok)
                     // pictograma Vermelho
                     gpio_put(S_BLOCK, 1);
                     gpio_put(S_ESQ,0);
+                    gpio_put(S_DIR,0);
                     gpio_put(S_BUZZ, 1);
                     gpio_put(S_STANDBY, 0);
                     Regula_Tensao();
@@ -2344,6 +2319,7 @@ int bloqueado(int blok)
                     // pictograma Vermelho
                     gpio_put(S_BLOCK, 1);
                     gpio_put(S_ESQ,0);
+                    gpio_put(S_DIR,0);
                     gpio_put(S_BUZZ, 1);
                     gpio_put(S_STANDBY, 0);
                     Regula_Tensao();
@@ -2353,7 +2329,6 @@ int bloqueado(int blok)
                 if (!gpio_get(SENSOR2) && !gpio_get(SENSOR1))
                 {
                     gpio_put(SOL1, 0);
-                    gpio_put(SOL2, 0);
                     gpio_put(SOL2, 0);
                     gpio_put(S_BLOCK, 0);
                     gpio_put(S_BUZZ, 0);
@@ -2369,7 +2344,7 @@ int bloqueado(int blok)
                     // pictograma Vermelho
                     gpio_put(S_BLOCK, 1);
                     gpio_put(S_ESQ,0);
-
+                    gpio_put(S_DIR,0);
                     gpio_put(S_BUZZ, 1);
                     gpio_put(S_STANDBY, 0);
                     Regula_Tensao();
@@ -2383,6 +2358,7 @@ int bloqueado(int blok)
                     // pictograma Vermelho
                     gpio_put(S_BLOCK, 1);
                     gpio_put(S_ESQ,0);
+                    gpio_put(S_DIR,0);
                     gpio_put(S_BUZZ, 1);
                     gpio_put(S_STANDBY, 0);
                     Regula_Tensao();
@@ -2392,7 +2368,6 @@ int bloqueado(int blok)
                 if (gpio_get(SENSOR2) && gpio_get(SENSOR1))
                 {
                     gpio_put(SOL1, 0);
-                    gpio_put(SOL2, 0);
                     gpio_put(SOL2, 0);
                     gpio_put(S_BLOCK, 0);
                     gpio_put(S_BUZZ, 0);
@@ -2420,6 +2395,7 @@ int bloqueado(int blok)
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
                         sinalMisto = true;
@@ -2453,6 +2429,7 @@ int bloqueado(int blok)
                         // pictograma Vermelho
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
@@ -2469,6 +2446,7 @@ int bloqueado(int blok)
                         // pictograma Vermelho
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
@@ -2503,6 +2481,7 @@ int bloqueado(int blok)
                         // pictograma Vermelho
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
@@ -2528,6 +2507,7 @@ int bloqueado(int blok)
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
                         sinalMisto = true;
@@ -2561,6 +2541,7 @@ int bloqueado(int blok)
                         // pictograma Vermelho
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
@@ -2577,6 +2558,7 @@ int bloqueado(int blok)
                         // pictograma Vermelho
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();
@@ -2611,6 +2593,7 @@ int bloqueado(int blok)
                         // pictograma Vermelho
                         gpio_put(S_BLOCK, 1);
                         gpio_put(S_ESQ,0);
+                        gpio_put(S_DIR,0);
                         gpio_put(S_BUZZ, 1);
                         gpio_put(S_STANDBY, 0);
                         Regula_Tensao();

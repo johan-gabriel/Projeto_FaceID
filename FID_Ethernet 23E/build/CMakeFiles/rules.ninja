@@ -83,7 +83,7 @@ rule ASM_EXECUTABLE_LINKER__bs2_default_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\User\Documents\Pico\_projetos\Projeto_FaceID\CartaoSDArmazem -BC:\Users\User\Documents\Pico\_projetos\Projeto_FaceID\CartaoSDArmazem\build
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet 23E" -B"D:\Projetos\Pico\_projetos\Projeto_FaceID\FID_Ethernet 23E\build"
   description = Re-running CMake...
   generator = 1
 

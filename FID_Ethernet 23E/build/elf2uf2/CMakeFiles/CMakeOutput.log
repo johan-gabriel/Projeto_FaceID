@@ -6,11 +6,11 @@ Id flags:
 
 The output was:
 0
-Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30152 para x86
+Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30153 para x86
 Copyright (C) Microsoft Corporation. Todos os direitos reservados.
 
 CMakeCCompilerId.c
-Microsoft (R) Incremental Linker Version 14.29.30152.0
+Microsoft (R) Incremental Linker Version 14.29.30153.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCCompilerId.exe 
@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/elf2uf2/CMakeFiles/3.25.0/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/elf2uf2/CMakeFiles/3.25.0/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
@@ -30,11 +30,11 @@ Id flags:
 
 The output was:
 0
-Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30152 para x86
+Microsoft (R) C/C++ Optimizing Compiler Versão 19.29.30153 para x86
 Copyright (C) Microsoft Corporation. Todos os direitos reservados.
 
 CMakeCXXCompilerId.cpp
-Microsoft (R) Incremental Linker Version 14.29.30152.0
+Microsoft (R) Incremental Linker Version 14.29.30153.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCXXCompilerId.exe 
@@ -45,21 +45,21 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/elf2uf2/CMakeFiles/3.25.0/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/elf2uf2/CMakeFiles/3.25.0/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-8qg0ug
+Change Dir: D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-ufcrmy
 
-Run Build Command(s):C:/PROGRA~2/MICROS~4/2019/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_62d80 && [1/2  50% :: 0.086] Building C object CMakeFiles\cmTC_62d80.dir\CMakeCCompilerABI.c.obj
-[2/2 100% :: 0.526] Linking C executable cmTC_62d80.exe
+Run Build Command(s):C:/PROGRA~2/MICROS~4/2019/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_01cd3 && [1/2] Building C object CMakeFiles\cmTC_01cd3.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_01cd3.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-04c1e3
+Change Dir: D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-ab7zro
 
-Run Build Command(s):C:/PROGRA~2/MICROS~4/2019/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_73f19 && [1/2  50% :: 0.142] Building CXX object CMakeFiles\cmTC_73f19.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2 100% :: 2.047] Linking CXX executable cmTC_73f19.exe
+Run Build Command(s):C:/PROGRA~2/MICROS~4/2019/BUILDT~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_b466e && [1/2] Building CXX object CMakeFiles\cmTC_b466e.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_b466e.exe
 
 
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/Documents/Pico/_projetos/Projeto_FaceID/CartaoSDArmazem/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI
+# Install script for directory: D:/Projetos/Pico/_projetos/Projeto_FaceID/FID_Ethernet 23E/lib/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

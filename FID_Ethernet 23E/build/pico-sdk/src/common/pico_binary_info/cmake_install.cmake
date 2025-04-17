@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/Documents/Pico/pico-sdk/src/common/pico_binary_info
+# Install script for directory: D:/Projetos/Pico/pico-sdk/src/common/pico_binary_info
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
